@@ -10,6 +10,8 @@ TagManager:
   - Green
   - Blue
   - Gem
+  - Bowl
+  - Stick
   layers:
   - Default
   - TransparentFX

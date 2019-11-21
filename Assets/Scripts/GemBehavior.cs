@@ -6,7 +6,7 @@ public class GemBehavior : MonoBehaviour
 {
 public GemClass gem;
 public Renderer gemMaterial;
-public ParticleSystemController redParticles;
+
 // Start is called before the first frame update
 void Start()
 {
@@ -16,13 +16,13 @@ void Start()
 void Update()
 {
 
-    if (redParticles.hit)
-    {
-        if (!IsActive(1))
-        {
-            gemMaterial.material.color = new Color(gem.rValue / 255f, gemMaterial.material.color.g, gemMaterial.material.color.b, gemMaterial.material.color.a);
-        }
-    }
+    //if (redParticles.hit)
+    //{
+    //    if (!IsActive(1))
+    //    {
+    //        gemMaterial.material.color = new Color(gem.rValue / 255f, gemMaterial.material.color.g, gemMaterial.material.color.b, gemMaterial.material.color.a);
+    //    }
+    //}
 }
 
 private void OnTriggerEnter(Collider other)
