@@ -11,6 +11,8 @@ public class BowlBehavior : MonoBehaviour
 
     public GameObject ring;
     public GameObject ringClone;
+
+    public AudioSource tone;
     
     // Start is called before the first frame update
     void Start()
@@ -27,12 +29,14 @@ public class BowlBehavior : MonoBehaviour
             if (!ringInstantiated)
             {
                 ringClone = Instantiate(ring);
+                PlayTone();
                 ringInstantiated = true;
             }
         }
         if(!isTouching)
         {
             ringInstantiated = false;
+            StartCoroutine("Fade");
             Destroy(ringClone);
         }
     }
@@ -51,6 +55,25 @@ public class BowlBehavior : MonoBehaviour
     {
         Debug.Log("Exit");
         isTouching = false;
+    }
 
+    private void PlayTone()
+    {
+        if(!tone.isPlaying)
+        {
+            tone.volume = 1;
+            tone.Play();
+        }
+    }
+
+    IEnumerator Fade()
+    {
+        while(tone.volume > 0.01f)
+        {
+            tone.volume -= Time.deltaTime / 2.0f;
+            yield return null;
+        }
+        tone.volume = 0;
+        tone.Stop();
     }
 }
