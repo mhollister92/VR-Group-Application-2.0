@@ -1,32 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * this class controls how the gems behave
+ */
 public class GemBehavior : MonoBehaviour
 {
-public GemClass gem;
-public Renderer gemMaterial;
+    //variables to hold references to the gem class and the renderer on the gem itself
+    public GemClass gem;
+    public Renderer gemMaterial;
 
 // Start is called before the first frame update
 void Start()
 {
+        //assigns the renderer on the object this script is attached to and assigns it to the gemMaterial variable
     gemMaterial = gameObject.GetComponent<Renderer>();
 }
 // Update is called once per frame
 void Update()
 {
 
-    //if (redParticles.hit)
-    //{
-    //    if (!IsActive(1))
-    //    {
-    //        gemMaterial.material.color = new Color(gem.rValue / 255f, gemMaterial.material.color.g, gemMaterial.material.color.b, gemMaterial.material.color.a);
-    //    }
-    //}
 }
-
+//this function runs when something collides with the gem
 private void OnTriggerEnter(Collider other)
 {
+        // if the object that collides with the gem is tagged red, check if the red value of the gem is already active,
+        // if not, set the red value to the red value stored in the gem class for this gem and don't change the green or blue
     if (other.CompareTag("Red"))
     {
         if (!IsActive(1))
@@ -34,6 +33,7 @@ private void OnTriggerEnter(Collider other)
             gemMaterial.material.color = new Color(gem.rValue / 255f, gemMaterial.material.color.g, gemMaterial.material.color.b, gemMaterial.material.color.a);
         }
     }
+    //if the object is tagged green, check if green is active and if not, set the green value and dont change the red or blue
     else if (other.CompareTag("Green"))
     {
         if (!IsActive(2))
@@ -41,6 +41,7 @@ private void OnTriggerEnter(Collider other)
             gemMaterial.material.color = new Color(gemMaterial.material.color.r, gem.gValue / 255f, gemMaterial.material.color.b, gemMaterial.material.color.a);
         }
     }
+    //if the object is tagged blue, check if blue is active and if not, set the blue value and dont change the red or geen
     else if (other.CompareTag("Blue"))
     {
         if (!IsActive(3))
@@ -48,11 +49,14 @@ private void OnTriggerEnter(Collider other)
             gemMaterial.material.color = new Color(gemMaterial.material.color.r, gemMaterial.material.color.g, gem.bValue / 255f, gemMaterial.material.color.a);
         }
     }
+    //if all the colors are active, don't change the values
     if (IsAllActive())
     {
         gemMaterial.material.color = new Color(gem.rValue / 255f, gem.gValue / 255f, gem.bValue / 255f, gemMaterial.material.color.a);
     }
 }
+    //this is a function that returns true or false, it takes an int and that decides which value it checks
+    //if the int is 1, it checks if the red is active and returns true or false, and so on
 bool IsActive(int color)
 {
     if (color == 1)
@@ -70,6 +74,7 @@ bool IsActive(int color)
     else
         return false;
 }
+    //this is a function to check if all the colors in a gem are active
 bool IsAllActive()
 {
     if (gem.rActive && gem.gActive && gem.bActive)

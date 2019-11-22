@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * This script attaches to the bowls in the scene
+ * it instantiates and deletes the sound waves
+ * it starts and stops the tones
+ */
 public class BowlBehavior : MonoBehaviour
 {
     private float timer;
@@ -23,6 +27,10 @@ public class BowlBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if the bowl and stick are touching start the timer which is used later for expanding the ring
+        //also instantiate a new ring if a ring hasn't already been instantiated and sets ringInstantiated to true
+        //this is to prevent new rings instantiating every frame the bowl and stick are touching
+        //
         if(isTouching)
         {
             timer = Time.deltaTime - startTime;
@@ -33,6 +41,9 @@ public class BowlBehavior : MonoBehaviour
                 ringInstantiated = true;
             }
         }
+        //once the bowl and stick aren't touching, set ringInstantiated to false so a new one will spawn next time they touch
+        //Also start the coroutine for fading the sound
+        //and destroy the clone of the ring we instantiated
         if(!isTouching)
         {
             ringInstantiated = false;
@@ -40,7 +51,9 @@ public class BowlBehavior : MonoBehaviour
             Destroy(ringClone);
         }
     }
-
+    //This function runs when the bowl collides with another object with a collider
+    //It checks that the other object is tagged as stick because we only want things to happen when the bowl and stick touch
+    //it sets the start time to the time the function is called and sets isTouching to true.
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Stick"))
@@ -50,13 +63,14 @@ public class BowlBehavior : MonoBehaviour
             isTouching = true;
         }
     }
-
+    //This function runs when the bowl and other object are no longer touching. We don't care about whether it stopped touching the stick or not
+    //this sets isTouching to false
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("Exit");
         isTouching = false;
     }
-
+    //this is a short function to start the tone if the tone is not already playing
     private void PlayTone()
     {
         if(!tone.isPlaying)
@@ -65,7 +79,7 @@ public class BowlBehavior : MonoBehaviour
             tone.Play();
         }
     }
-
+    //this is a coroutine which fades the music out over a short amount of time and then stops the music
     IEnumerator Fade()
     {
         while(tone.volume > 0.01f)
