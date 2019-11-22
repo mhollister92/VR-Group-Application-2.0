@@ -8,8 +8,9 @@ using UnityEngine;
 public class RingBehavior : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Vector3 startPosition = new Vector3(0, 0, 0);
-    private Vector3 endPosition = new Vector3(20, 20, 20);
+    private Vector3 startScale = new Vector3(0, 0, 0);
+    private Vector3 endScale = new Vector3(20, 20, 20);
+    public Vector3 startPosition;
     //the rate the ring expands
     public float speed = 1f;
     //holds the time the ring is instantiated
@@ -19,12 +20,13 @@ public class RingBehavior : MonoBehaviour
 
     void Start()
     {
+        transform.position = startPosition;
         //sets the start scale of the object this is attacted to to the start scale
-        transform.localScale = startPosition;
+        transform.localScale = startScale;
         //sets the start time
         startTime = Time.time;
         //calculates the distance
-        distance = Vector3.Distance(startPosition, endPosition);
+        distance = Vector3.Distance(startScale, endScale);
     }
 
     // Update is called once per frame
@@ -36,6 +38,6 @@ public class RingBehavior : MonoBehaviour
         float t = distanceCovered / distance;
         //lerps the scale of the object based on the start scale, end scale, and how far along
         //honestly, if you want to know more about lerping, the unity API has way more info
-        transform.localScale = Vector3.Lerp(startPosition, endPosition, t);
+        transform.localScale = Vector3.Lerp(startScale, endScale, t);
     }
 }

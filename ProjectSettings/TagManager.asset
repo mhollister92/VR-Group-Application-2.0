@@ -12,6 +12,7 @@ TagManager:
   - Gem
   - Bowl
   - Stick
+  - Plane
   layers:
   - Default
   - TransparentFX
