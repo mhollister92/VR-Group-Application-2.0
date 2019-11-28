@@ -13,6 +13,7 @@ public class BowlBehavior : MonoBehaviour
     private float startTime;
     private bool isTouching;
     public bool ringInstantiated = false;
+    private Rigidbody rigidBody;
 
     public GameObject ring;
     public GameObject ringClone;
@@ -23,7 +24,7 @@ public class BowlBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rigidBody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -42,6 +43,7 @@ public class BowlBehavior : MonoBehaviour
             startTime = Time.deltaTime;
             if (!ringInstantiated)
             {
+                rigidBody.velocity = new Vector3(0, 0, 0);
                 ringClone = Instantiate(ring);
                 PlayTone();
                 ringInstantiated = true;
@@ -75,8 +77,8 @@ public class BowlBehavior : MonoBehaviour
         yield return new WaitForSeconds(5);
         ringInstantiated = false;
         StartCoroutine("Fade");
-        Destroy(ringClone);
         gameController.CreateThrowable(this.tag);
         Destroy(this.gameObject);
+        Destroy(ringClone);
     }
 }
