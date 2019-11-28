@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 /*
  * This script attaches to the bowls in the scene
  * it instantiates and deletes the sound waves
@@ -11,21 +12,18 @@ public class BowlBehavior : MonoBehaviour
     private float timer;
     private float startTime;
     private bool isTouching;
-    private bool ringInstantiated = false;
+    public bool ringInstantiated = false;
 
     public GameObject ring;
     public GameObject ringClone;
     public RingBehavior ringBehavior;
     public AudioSource tone;
 
-    private Vector3 startPosition;
-    private Rigidbody rigidBody;
-    
+    public GameController gameController;
     // Start is called before the first frame update
     void Start()
     {
-        startPosition = transform.position;
-        rigidBody = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -48,7 +46,6 @@ public class BowlBehavior : MonoBehaviour
                 PlayTone();
                 ringInstantiated = true;
                 StartCoroutine("RingTimer");
-                
             }
         }
     }
@@ -79,5 +76,7 @@ public class BowlBehavior : MonoBehaviour
         ringInstantiated = false;
         StartCoroutine("Fade");
         Destroy(ringClone);
+        gameController.CreateThrowable(this.tag);
+        Destroy(this.gameObject);
     }
 }
