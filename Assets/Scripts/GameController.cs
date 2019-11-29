@@ -17,12 +17,20 @@ public class GameController : MonoBehaviour
     public Transform greenStart;
     public Transform blueStart;
 
+    public AudioSource lows;
+    public AudioSource mids;
+    public AudioSource high;
+
     // Start is called before the first frame update
     void Start()
     {
         redClone = Instantiate(redThrowable);
         greenClone = Instantiate(greenThrowable);
         blueClone = Instantiate(blueThrowable);
+
+        lows.volume = 0.2f;
+        mids.volume = 0.2f;
+        high.volume = 0.2f;
     }
 
     public void CreateThrowable (string color)
@@ -37,6 +45,42 @@ public class GameController : MonoBehaviour
                 break;
             case "Blue":
                 Instantiate(blueThrowable, blueStart.position, Quaternion.identity);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void PlayAudio(string color)
+    {
+        switch (color)
+        {
+            case "Red":
+                lows.volume = 1;
+                break;
+            case "Green":
+                mids.volume = 1;
+                break;
+            case "Blue":
+                high.volume = 1;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void StopAudio (string color)
+    {
+        switch (color)
+        {
+            case "Red":
+                lows.volume = 0.2f;
+                break;
+            case "Green":
+                mids.volume = 0.2f;
+                break;
+            case "Blue":
+                high.volume = 0.2f;
                 break;
             default:
                 break;

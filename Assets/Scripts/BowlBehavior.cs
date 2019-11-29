@@ -18,19 +18,12 @@ public class BowlBehavior : MonoBehaviour
     public GameObject ring;
     public GameObject ringClone;
     public RingBehavior ringBehavior;
-    public AudioSource tone;
 
     public GameController gameController;
     // Start is called before the first frame update
     void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void OnCollisionEnter(Collision other)
@@ -44,40 +37,22 @@ public class BowlBehavior : MonoBehaviour
             if (!ringInstantiated)
             {
                 rigidBody.velocity = new Vector3(0, 0, 0);
+                gameController.PlayAudio(this.tag);
                 ringClone = Instantiate(ring);
-                PlayTone();
                 ringInstantiated = true;
                 StartCoroutine("RingTimer");
             }
         }
     }
 
-    private void PlayTone()
-    {
-        if(!tone.isPlaying)
-        {
-            tone.volume = 1;
-            tone.Play();
-        }
-    }
     //this is a coroutine which fades the music out over a short amount of time and then stops the music
-    IEnumerator Fade()
-    {
-        while(tone.volume > 0.01f)
-        {
-            tone.volume -= Time.deltaTime / 2.0f;
-            yield return null;
-        }
-        tone.volume = 0;
-        tone.Stop();
-    }
 
     IEnumerator RingTimer()
     {
         yield return new WaitForSeconds(5);
         ringInstantiated = false;
-        StartCoroutine("Fade");
         gameController.CreateThrowable(this.tag);
+        gameController.StopAudio(this.tag);
         Destroy(this.gameObject);
         Destroy(ringClone);
     }
