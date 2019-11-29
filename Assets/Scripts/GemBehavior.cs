@@ -8,86 +8,88 @@ public class GemBehavior : MonoBehaviour
 {
     //variables to hold references to the gem class and the renderer on the gem itself
     public GemClass gem;
-    public Renderer gemMaterial;
+    public Renderer gemRenderer;
     public Light gemLight;
 
-// Start is called before the first frame update
-void Start()
-{
+    // Start is called before the first frame update
+    void Start()
+    {
         //assigns the renderer on the object this script is attached to and assigns it to the gemMaterial variable
-    gemMaterial = gameObject.GetComponent<Renderer>();
-        gemLight.enabled = false;
-}
-// Update is called once per frame
-void Update()
-{
+        gemRenderer = gameObject.GetComponent<Renderer>();
+        gemLight = gameObject.GetComponent<Light>();
 
-}
-//this function runs when something collides with the gem
-private void OnTriggerEnter(Collider other)
-{
+        gemLight.enabled = false;
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+    //this function runs when something collides with the gem
+    private void OnTriggerEnter(Collider other)
+    {
         // if the object that collides with the gem is tagged red, check if the red value of the gem is already active,
         // if not, set the red value to the red value stored in the gem class for this gem and don't change the green or blue
-    if (other.CompareTag("Red"))
-    {
-        if (!IsActive(1))
+        if (other.CompareTag("Red"))
         {
-            gemMaterial.material.color = new Color(gem.rValue / 255f, gemMaterial.material.color.g, gemMaterial.material.color.b, gemMaterial.material.color.a);
+            if (!IsActive(1))
+            {
+                gemRenderer.material.color = new Color(gem.rValue / 255f, gemRenderer.material.color.g, gemRenderer.material.color.b, gemRenderer.material.color.a);
                 gemLight.enabled = true;
+            }
         }
-    }
-    //if the object is tagged green, check if green is active and if not, set the green value and dont change the red or blue
-    else if (other.CompareTag("Green"))
-    {
-        if (!IsActive(2))
+        //if the object is tagged green, check if green is active and if not, set the green value and dont change the red or blue
+        else if (other.CompareTag("Green"))
         {
-            gemMaterial.material.color = new Color(gemMaterial.material.color.r, gem.gValue / 255f, gemMaterial.material.color.b, gemMaterial.material.color.a);
+            if (!IsActive(2))
+            {
+                gemRenderer.material.color = new Color(gemRenderer.material.color.r, gem.gValue / 255f, gemRenderer.material.color.b, gemRenderer.material.color.a);
                 gemLight.enabled = true;
+            }
         }
-    }
-    //if the object is tagged blue, check if blue is active and if not, set the blue value and dont change the red or geen
-    else if (other.CompareTag("Blue"))
-    {
-        if (!IsActive(3))
+        //if the object is tagged blue, check if blue is active and if not, set the blue value and dont change the red or geen
+        else if (other.CompareTag("Blue"))
         {
-            gemMaterial.material.color = new Color(gemMaterial.material.color.r, gemMaterial.material.color.g, gem.bValue / 255f, gemMaterial.material.color.a);
+            if (!IsActive(3))
+            {
+                gemRenderer.material.color = new Color(gemRenderer.material.color.r, gemRenderer.material.color.g, gem.bValue / 255f, gemRenderer.material.color.a);
                 gemLight.enabled = true;
+            }
         }
-    }
-    //if all the colors are active, don't change the values
-    if (IsAllActive())
-    {
-        gemMaterial.material.color = new Color(gem.rValue / 255f, gem.gValue / 255f, gem.bValue / 255f, gemMaterial.material.color.a);
+        //if all the colors are active, don't change the values
+        if (IsAllActive())
+        {
+            gemRenderer.material.color = new Color(gem.rValue / 255f, gem.gValue / 255f, gem.bValue / 255f, gemRenderer.material.color.a);
             gemLight.enabled = true;
+        }
     }
-}
     //this is a function that returns true or false, it takes an int and that decides which value it checks
     //if the int is 1, it checks if the red is active and returns true or false, and so on
-bool IsActive(int color)
-{
-    if (color == 1)
+    bool IsActive(int color)
     {
-        return gem.rActive;
+        if (color == 1)
+        {
+            return gem.rActive;
+        }
+        else if (color == 2)
+        {
+            return gem.gActive;
+        }
+        else if (color == 3)
+        {
+            return gem.gActive;
+        }
+        else
+            return false;
     }
-    else if (color == 2)
-    {
-        return gem.gActive;
-    }
-    else if (color == 3)
-    {
-        return gem.gActive;
-    }
-    else
-        return false;
-}
     //this is a function to check if all the colors in a gem are active
-bool IsAllActive()
-{
-    if (gem.rActive && gem.gActive && gem.bActive)
+    bool IsAllActive()
     {
-        return true;
+        if (gem.rActive && gem.gActive && gem.bActive)
+        {
+            return true;
+        }
+        else
+            return false;
     }
-    else
-        return false;
-}
 }
