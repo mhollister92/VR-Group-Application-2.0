@@ -9,11 +9,12 @@ using UnityEngine.Events;
  */
 public class BowlBehavior : MonoBehaviour
 {
-    private float timer;
+    //private float timer;
     private float startTime;
     private bool isTouching;
     public bool ringInstantiated = false;
     private Rigidbody rigidBody;
+    public Vector3 landPosition = new Vector3(0, 0, 0);
 
     public GameObject ring;
     public GameObject ringClone;
@@ -32,10 +33,10 @@ public class BowlBehavior : MonoBehaviour
         {
             Debug.Log("Hit");
             isTouching = true;
-            ringBehavior.startPosition = new Vector3(transform.position.x, ring.transform.position.y, transform.position.z);
             startTime = Time.deltaTime;
             if (!ringInstantiated)
             {
+                ringBehavior.startPosition = new Vector3(transform.position.x, .5f, transform.position.z);
                 rigidBody.velocity = new Vector3(0, 0, 0);
                 gameController.PlayAudio(this.tag);
                 ringClone = Instantiate(ring);

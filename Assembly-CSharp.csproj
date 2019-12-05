@@ -63,11 +63,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ParticleLight\Scripts\UVScroller_C.cs" />
     <Compile Include="Assets\Scripts\BowlBehavior.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GemBehavior.cs" />
     <Compile Include="Assets\Scripts\GemClass.cs" />
     <Compile Include="Assets\Scripts\RingBehavior.cs" />
+    <None Include="Assets\ParticleLight\Read Me\Read Me.txt" />
+    <None Include="Assets\ParticleLight\Shader\AdditiveMask.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/VRLabNew4/Documents/GitHub/VR-Group-Application-2.0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
