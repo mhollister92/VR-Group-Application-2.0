@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fd4f471639d49c94297f3b9545d27115, type: 2}
+  - {fileID: 2100000, guid: ca66bcea6b6ccf743ad2a25a428a9552, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -224,9 +224,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ringInstantiated: 0
+  landPosition: {x: 0, y: 0, z: 0}
   ring: {fileID: 7971827341923490144, guid: d35057227fd699646a84ca11586f3f94, type: 3}
   ringClone: {fileID: 0}
-  ringBehavior: {fileID: 8002089074428168521, guid: 8f49edfe8fa3459479cc1f4f1320e1eb,
+  ringBehavior: {fileID: 6937592776626579030, guid: d35057227fd699646a84ca11586f3f94,
     type: 3}
   gameController: {fileID: 4029165621102842955, guid: 92577031aec4af643abecb60a6504a7a,
     type: 3}

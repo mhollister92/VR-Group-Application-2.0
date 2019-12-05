@@ -8,7 +8,7 @@ using UnityEngine;
 public class RingBehavior : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Vector3 startScale = new Vector3(.01f, .01f, .01f);
+    private Vector3 startScale = new Vector3(1, 1, 1);
     private Vector3 endScale = new Vector3(20, 20, 20);
     public Vector3 startPosition;
     //the rate the ring expands

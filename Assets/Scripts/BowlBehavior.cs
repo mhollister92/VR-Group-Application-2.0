@@ -36,7 +36,7 @@ public class BowlBehavior : MonoBehaviour
             startTime = Time.deltaTime;
             if (!ringInstantiated)
             {
-                ringBehavior.startPosition = new Vector3(transform.position.x, .5f, transform.position.z);
+                ringBehavior.startPosition = new Vector3(transform.position.x, .25f, transform.position.z);
                 rigidBody.velocity = new Vector3(0, 0, 0);
                 gameController.PlayAudio(this.tag);
                 ringClone = Instantiate(ring);
