@@ -29,14 +29,21 @@ public class BowlBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Plane")
+        if (other.gameObject.tag == "Plane" || other.gameObject.tag == "Roof")
         {
-            Debug.Log("Hit");
+            //Debug.Log("Hit");
             isTouching = true;
             startTime = Time.deltaTime;
             if (!ringInstantiated)
             {
-                ringBehavior.startPosition = new Vector3(transform.position.x, .25f, transform.position.z);
+                if (other.gameObject.tag == "Plane")
+                {
+                    ringBehavior.startPosition = new Vector3(transform.position.x, transform.position.y - 0.25f, transform.position.z);
+                }
+                else if (other.gameObject.tag == "Roof")
+                {
+                    ringBehavior.startPosition = new Vector3(transform.position.x, transform.position.y + 0.25f, transform.position.z);
+                }
                 rigidBody.velocity = new Vector3(0, 0, 0);
                 gameController.PlayAudio(this.tag);
                 ringClone = Instantiate(ring);

@@ -56,13 +56,16 @@ public class GameController : MonoBehaviour
         switch (color)
         {
             case "Red":
-                lows.volume = 1;
+                lows.volume = 1f;
+                //Debug.Log(lows.volume);
                 break;
             case "Green":
-                mids.volume = 1;
+                mids.volume = 1f;
+                //Debug.Log(mids.volume);
                 break;
             case "Blue":
-                high.volume = 1;
+                high.volume = 1f;
+                //Debug.Log(high.volume);
                 break;
             default:
                 break;
