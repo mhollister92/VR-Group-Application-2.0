@@ -21,16 +21,19 @@ public class GameController : MonoBehaviour
     public AudioSource mids;
     public AudioSource high;
 
+    public float volume;
+
     // Start is called before the first frame update
     void Start()
     {
         redClone = Instantiate(redThrowable);
         greenClone = Instantiate(greenThrowable);
         blueClone = Instantiate(blueThrowable);
+        volume = 0.2f;
 
-        lows.volume = 0.2f;
-        mids.volume = 0.2f;
-        high.volume = 0.2f;
+        lows.volume = volume;
+        mids.volume = volume;
+        high.volume = volume;
     }
 
     public void CreateThrowable (string color)
@@ -56,20 +59,24 @@ public class GameController : MonoBehaviour
         switch (color)
         {
             case "Red":
-                lows.volume = 1f;
+                volume = 1f;
+                lows.volume = volume;
                 //Debug.Log(lows.volume);
                 break;
             case "Green":
-                mids.volume = 1f;
+                volume = 1f;
+                mids.volume = volume;
                 //Debug.Log(mids.volume);
                 break;
             case "Blue":
-                high.volume = 1f;
+                volume = 1f;
+                high.volume = volume;
                 //Debug.Log(high.volume);
                 break;
             default:
                 break;
         }
+        volume = 0.2f;
     }
 
     public void StopAudio (string color)
@@ -77,13 +84,16 @@ public class GameController : MonoBehaviour
         switch (color)
         {
             case "Red":
-                lows.volume = 0.2f;
+                volume = 0.2f;
+                lows.volume = volume;
                 break;
             case "Green":
-                mids.volume = 0.2f;
+                volume = 0.2f;
+                mids.volume = volume;
                 break;
             case "Blue":
-                high.volume = 0.2f;
+                volume = 0.2f;
+                high.volume = volume;
                 break;
             default:
                 break;
