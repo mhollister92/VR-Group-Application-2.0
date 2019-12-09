@@ -367,6 +367,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiCanvas: {fileID: 0}
-  startButton: {fileID: 0}
   tutorialText: {fileID: 0}
-  buttonText: {fileID: 0}

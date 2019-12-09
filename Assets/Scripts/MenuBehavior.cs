@@ -6,20 +6,17 @@ using UnityEngine.UI;
 public class MenuBehavior : MonoBehaviour
 {
     public Canvas uiCanvas;
-    public Button startButton;
     public Text tutorialText;
-    public Text buttonText;
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0.0f;
+        StartCoroutine("TutorialTimer");
     }
-    public void StartGame()
+
+    IEnumerator TutorialTimer()
     {
-        Time.timeScale = 1.0f;
+        yield return new WaitForSeconds(10);
         uiCanvas.enabled = false;
-        startButton.enabled = false;
         tutorialText.enabled = false;
-        buttonText.enabled = false;
     }
 }
