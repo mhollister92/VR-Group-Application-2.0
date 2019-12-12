@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Valve.VR;
 
 public class GameController : MonoBehaviour
 {
@@ -23,6 +26,8 @@ public class GameController : MonoBehaviour
 
     public float volume;
 
+    public GemBehavior gem;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +40,13 @@ public class GameController : MonoBehaviour
         mids.volume = volume;
         high.volume = volume;
     }
-
+    private void Update()
+    {
+        if(gem.gemCount == gem.gemTotal)
+        {
+            LoadScene(1);
+        }
+    }
     public void CreateThrowable (string color)
     {
         switch(color)
@@ -79,7 +90,7 @@ public class GameController : MonoBehaviour
         volume = 0.2f;
     }
 
-    public void StopAudio (string color)
+    public void StopAudio(string color)
     {
         switch (color)
         {
@@ -98,5 +109,10 @@ public class GameController : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void LoadScene(int i)
+    {
+        SceneManager.LoadScene(i);
     }
 }

@@ -13,5 +13,5 @@ public class GemClass : MonoBehaviour
     public bool gActive = false;
     public bool bActive = false;
 
-    //bool allActive = false;
+    public bool allActive = false;
 }

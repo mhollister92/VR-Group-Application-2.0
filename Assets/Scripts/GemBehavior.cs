@@ -10,6 +10,9 @@ public class GemBehavior : MonoBehaviour
     public GemClass gem;
     public Renderer gemRenderer;
     public Light gemLight;
+    public int gemTotal = 129;
+    public int gemCount = 0;
+    public bool alreadyCounted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -61,6 +64,12 @@ public class GemBehavior : MonoBehaviour
         {
             gemRenderer.material.color = new Color(gem.rValue / 255f, gem.gValue / 255f, gem.bValue / 255f, gemRenderer.material.color.a);
             gemLight.enabled = true;
+            gem.allActive = true;
+            if(!alreadyCounted)
+            {
+                gemCount++;
+                alreadyCounted = true;
+            }
         }
     }
     //this is a function that returns true or false, it takes an int and that decides which value it checks

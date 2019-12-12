@@ -65,6 +65,8 @@
   <ItemGroup>
     <Compile Include="Assets\ParticleLight\Scripts\UVScroller_C.cs" />
     <Compile Include="Assets\Scripts\BowlBehavior.cs" />
+    <Compile Include="Assets\Scripts\EndGameBehavior.cs" />
+    <Compile Include="Assets\Scripts\FadeImage.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\GemBehavior.cs" />
     <Compile Include="Assets\Scripts\GemClass.cs" />

@@ -175,6 +175,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1468439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,6 +191,8 @@ MonoBehaviour:
   gem: {fileID: 1468438}
   gemRenderer: {fileID: 1468443}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1468440
 Light:
   m_ObjectHideFlags: 0
@@ -843,6 +846,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &98976082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,6 +862,8 @@ MonoBehaviour:
   gem: {fileID: 98976081}
   gemRenderer: {fileID: 98976083}
   gemLight: {fileID: 98976080}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!23 &98976083 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
@@ -919,6 +925,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &104702027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -934,6 +941,8 @@ MonoBehaviour:
   gem: {fileID: 104702026}
   gemRenderer: {fileID: 104702031}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &104702028
 Light:
   m_ObjectHideFlags: 0
@@ -1242,6 +1251,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &122277446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,6 +1267,8 @@ MonoBehaviour:
   gem: {fileID: 122277445}
   gemRenderer: {fileID: 122277447}
   gemLight: {fileID: 122277444}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!23 &122277447 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
@@ -1366,6 +1378,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &143578709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,6 +1394,8 @@ MonoBehaviour:
   gem: {fileID: 143578708}
   gemRenderer: {fileID: 143578711}
   gemLight: {fileID: 143578710}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &143578710
 Light:
   m_ObjectHideFlags: 0
@@ -1502,6 +1517,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &151953426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,6 +1533,8 @@ MonoBehaviour:
   gem: {fileID: 151953425}
   gemRenderer: {fileID: 151953430}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &151953427
 Light:
   m_ObjectHideFlags: 0
@@ -1670,6 +1688,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1740,11 +1763,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2500863
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1780,6 +1798,8 @@ MonoBehaviour:
   gem: {fileID: 157281555}
   gemRenderer: {fileID: 157281553}
   gemLight: {fileID: 157281556}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &157281555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1798,6 +1818,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &157281556
 Light:
   m_ObjectHideFlags: 0
@@ -2070,6 +2091,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &210516744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2085,6 +2107,8 @@ MonoBehaviour:
   gem: {fileID: 210516743}
   gemRenderer: {fileID: 210516748}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &210516745
 Light:
   m_ObjectHideFlags: 0
@@ -2275,6 +2299,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &225654771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2290,6 +2315,8 @@ MonoBehaviour:
   gem: {fileID: 225654770}
   gemRenderer: {fileID: 225654775}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &225654772
 Light:
   m_ObjectHideFlags: 0
@@ -2499,6 +2526,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &244432114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2514,6 +2542,8 @@ MonoBehaviour:
   gem: {fileID: 244432113}
   gemRenderer: {fileID: 244432118}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &244432115
 Light:
   m_ObjectHideFlags: 0
@@ -2704,6 +2734,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &245717067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2719,6 +2750,8 @@ MonoBehaviour:
   gem: {fileID: 245717066}
   gemRenderer: {fileID: 245717071}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &245717068
 Light:
   m_ObjectHideFlags: 0
@@ -2909,6 +2942,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &260276623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2924,6 +2958,8 @@ MonoBehaviour:
   gem: {fileID: 260276622}
   gemRenderer: {fileID: 260276627}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &260276624
 Light:
   m_ObjectHideFlags: 0
@@ -3080,6 +3116,8 @@ MonoBehaviour:
   gem: {fileID: 260715736}
   gemRenderer: {fileID: 260715740}
   gemLight: {fileID: 260715737}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &260715736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3098,6 +3136,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &260715737
 Light:
   m_ObjectHideFlags: 0
@@ -3268,6 +3307,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &266752181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3283,6 +3323,8 @@ MonoBehaviour:
   gem: {fileID: 266752180}
   gemRenderer: {fileID: 266752185}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &266752182
 Light:
   m_ObjectHideFlags: 0
@@ -3552,6 +3594,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &271850733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3567,6 +3610,8 @@ MonoBehaviour:
   gem: {fileID: 271850732}
   gemRenderer: {fileID: 271850737}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &271850734
 Light:
   m_ObjectHideFlags: 0
@@ -3714,6 +3759,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3784,11 +3834,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2500863
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3888,6 +3933,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3958,11 +4008,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2500863
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3998,6 +4043,8 @@ MonoBehaviour:
   gem: {fileID: 292338483}
   gemRenderer: {fileID: 292338481}
   gemLight: {fileID: 292338484}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &292338483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4016,6 +4063,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &292338484
 Light:
   m_ObjectHideFlags: 0
@@ -4131,6 +4179,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &312656395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4146,6 +4195,8 @@ MonoBehaviour:
   gem: {fileID: 312656394}
   gemRenderer: {fileID: 312656399}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &312656396
 Light:
   m_ObjectHideFlags: 0
@@ -4658,6 +4709,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &379825077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4673,6 +4725,8 @@ MonoBehaviour:
   gem: {fileID: 379825076}
   gemRenderer: {fileID: 379825081}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &379825078
 Light:
   m_ObjectHideFlags: 0
@@ -4977,6 +5031,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5047,11 +5106,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.7901924
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5134,6 +5188,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &405052782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5149,6 +5204,8 @@ MonoBehaviour:
   gem: {fileID: 405052781}
   gemRenderer: {fileID: 405052786}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &405052783
 Light:
   m_ObjectHideFlags: 0
@@ -5497,6 +5554,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &435253952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5512,6 +5570,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 435253956}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &435253953
 Light:
   m_ObjectHideFlags: 0
@@ -5810,6 +5870,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &466157798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5825,6 +5886,8 @@ MonoBehaviour:
   gem: {fileID: 466157797}
   gemRenderer: {fileID: 466157802}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &466157799
 Light:
   m_ObjectHideFlags: 0
@@ -6015,6 +6078,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &470856737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6030,6 +6094,8 @@ MonoBehaviour:
   gem: {fileID: 470856736}
   gemRenderer: {fileID: 470856741}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &470856738
 Light:
   m_ObjectHideFlags: 0
@@ -6220,6 +6286,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &495281914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6235,6 +6302,8 @@ MonoBehaviour:
   gem: {fileID: 495281913}
   gemRenderer: {fileID: 495281918}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &495281915
 Light:
   m_ObjectHideFlags: 0
@@ -6542,6 +6611,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &507534589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6557,6 +6627,8 @@ MonoBehaviour:
   gem: {fileID: 507534588}
   gemRenderer: {fileID: 507534593}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &507534590
 Light:
   m_ObjectHideFlags: 0
@@ -6825,6 +6897,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &537139773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6840,6 +6913,8 @@ MonoBehaviour:
   gem: {fileID: 537139772}
   gemRenderer: {fileID: 537139777}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &537139774
 Light:
   m_ObjectHideFlags: 0
@@ -7030,6 +7105,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &544266424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7045,6 +7121,8 @@ MonoBehaviour:
   gem: {fileID: 544266423}
   gemRenderer: {fileID: 544266428}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &544266425
 Light:
   m_ObjectHideFlags: 0
@@ -7201,6 +7279,8 @@ MonoBehaviour:
   gem: {fileID: 560687966}
   gemRenderer: {fileID: 560687970}
   gemLight: {fileID: 560687967}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &560687966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7219,6 +7299,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &560687967
 Light:
   m_ObjectHideFlags: 0
@@ -7369,6 +7450,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &574448018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7384,6 +7466,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 574448022}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &574448019
 Light:
   m_ObjectHideFlags: 0
@@ -7593,6 +7677,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &596277949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7608,6 +7693,8 @@ MonoBehaviour:
   gem: {fileID: 596277948}
   gemRenderer: {fileID: 596277953}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &596277950
 Light:
   m_ObjectHideFlags: 0
@@ -7818,6 +7905,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &631792214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7833,6 +7921,8 @@ MonoBehaviour:
   gem: {fileID: 631792213}
   gemRenderer: {fileID: 631792218}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &631792215
 Light:
   m_ObjectHideFlags: 0
@@ -8023,6 +8113,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &642583864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8038,6 +8129,8 @@ MonoBehaviour:
   gem: {fileID: 642583863}
   gemRenderer: {fileID: 642583868}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &642583865
 Light:
   m_ObjectHideFlags: 0
@@ -8228,6 +8321,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &642701960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8243,6 +8337,8 @@ MonoBehaviour:
   gem: {fileID: 642701959}
   gemRenderer: {fileID: 642701964}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &642701961
 Light:
   m_ObjectHideFlags: 0
@@ -8452,6 +8548,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &656399735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8467,6 +8564,8 @@ MonoBehaviour:
   gem: {fileID: 656399734}
   gemRenderer: {fileID: 656399739}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &656399736
 Light:
   m_ObjectHideFlags: 0
@@ -8735,6 +8834,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &668626078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8750,6 +8850,8 @@ MonoBehaviour:
   gem: {fileID: 668626077}
   gemRenderer: {fileID: 668626082}
   gemLight: {fileID: 668626079}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &668626079
 Light:
   m_ObjectHideFlags: 0
@@ -8998,6 +9100,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &674007651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9013,6 +9116,8 @@ MonoBehaviour:
   gem: {fileID: 674007650}
   gemRenderer: {fileID: 674007652}
   gemLight: {fileID: 674007647}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!23 &674007652 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3907355935067576919, guid: c8919961b2f4c4b40a35753481ce8b0a,
@@ -9074,6 +9179,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &702042732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9089,6 +9195,8 @@ MonoBehaviour:
   gem: {fileID: 702042731}
   gemRenderer: {fileID: 702042736}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &702042733
 Light:
   m_ObjectHideFlags: 0
@@ -9716,6 +9824,8 @@ MonoBehaviour:
   gem: {fileID: 780491886}
   gemRenderer: {fileID: 780491890}
   gemLight: {fileID: 780491887}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &780491886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9734,6 +9844,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &780491887
 Light:
   m_ObjectHideFlags: 0
@@ -9935,6 +10046,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5.760097
       objectReference: {fileID: 0}
+    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
     - target: {fileID: 1135244083771908629, guid: c8919961b2f4c4b40a35753481ce8b0a,
         type: 3}
       propertyPath: m_IsActive
@@ -9955,12 +10072,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8919961b2f4c4b40a35753481ce8b0a, type: 3}
 --- !u!1 &830689051
@@ -10018,6 +10129,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &830689054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10033,6 +10145,8 @@ MonoBehaviour:
   gem: {fileID: 830689053}
   gemRenderer: {fileID: 830689058}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &830689055
 Light:
   m_ObjectHideFlags: 0
@@ -10223,6 +10337,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &835901071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10238,6 +10353,8 @@ MonoBehaviour:
   gem: {fileID: 835901070}
   gemRenderer: {fileID: 835901075}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &835901072
 Light:
   m_ObjectHideFlags: 0
@@ -10526,6 +10643,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &855895110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10541,6 +10659,8 @@ MonoBehaviour:
   gem: {fileID: 855895109}
   gemRenderer: {fileID: 855895114}
   gemLight: {fileID: 855895111}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &855895111
 Light:
   m_ObjectHideFlags: 0
@@ -10986,6 +11106,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &940253419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11001,6 +11122,8 @@ MonoBehaviour:
   gem: {fileID: 940253418}
   gemRenderer: {fileID: 940253423}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &940253420
 Light:
   m_ObjectHideFlags: 0
@@ -11223,6 +11346,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.99385804
       objectReference: {fileID: 0}
+    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
     - target: {fileID: 1135244083771908629, guid: c8919961b2f4c4b40a35753481ce8b0a,
         type: 3}
       propertyPath: m_IsActive
@@ -11243,12 +11372,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8919961b2f4c4b40a35753481ce8b0a, type: 3}
 --- !u!1 &975221971
@@ -11306,6 +11429,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &975221974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11321,6 +11445,8 @@ MonoBehaviour:
   gem: {fileID: 975221973}
   gemRenderer: {fileID: 975221978}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &975221975
 Light:
   m_ObjectHideFlags: 0
@@ -11783,6 +11909,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1022067783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11798,6 +11925,8 @@ MonoBehaviour:
   gem: {fileID: 1022067782}
   gemRenderer: {fileID: 1022067787}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1022067784
 Light:
   m_ObjectHideFlags: 0
@@ -12014,6 +12143,8 @@ MonoBehaviour:
   gem: {fileID: 1027224124}
   gemRenderer: {fileID: 1027224127}
   gemLight: {fileID: 1027224122}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1027224124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12032,6 +12163,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1027224125
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12141,6 +12273,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1038760781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12156,6 +12289,8 @@ MonoBehaviour:
   gem: {fileID: 1038760780}
   gemRenderer: {fileID: 1038760785}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1038760782
 Light:
   m_ObjectHideFlags: 0
@@ -12346,6 +12481,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1041908637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12361,6 +12497,8 @@ MonoBehaviour:
   gem: {fileID: 1041908636}
   gemRenderer: {fileID: 1041908641}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1041908638
 Light:
   m_ObjectHideFlags: 0
@@ -12551,6 +12689,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1042156567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12566,6 +12705,8 @@ MonoBehaviour:
   gem: {fileID: 1042156566}
   gemRenderer: {fileID: 1042156571}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1042156568
 Light:
   m_ObjectHideFlags: 0
@@ -12713,6 +12854,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock (7)
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12783,11 +12929,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2458231
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -12851,6 +12992,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1061273135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12866,6 +13008,8 @@ MonoBehaviour:
   gem: {fileID: 1061273134}
   gemRenderer: {fileID: 1061273139}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1061273136
 Light:
   m_ObjectHideFlags: 0
@@ -13056,6 +13200,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1068968709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13071,6 +13216,8 @@ MonoBehaviour:
   gem: {fileID: 1068968708}
   gemRenderer: {fileID: 1068968713}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1068968710
 Light:
   m_ObjectHideFlags: 0
@@ -13450,6 +13597,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1101167035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13465,6 +13613,8 @@ MonoBehaviour:
   gem: {fileID: 1101167034}
   gemRenderer: {fileID: 1101167039}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1101167036
 Light:
   m_ObjectHideFlags: 0
@@ -13655,6 +13805,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1102662814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13670,6 +13821,8 @@ MonoBehaviour:
   gem: {fileID: 1102662813}
   gemRenderer: {fileID: 1102662818}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1102662815
 Light:
   m_ObjectHideFlags: 0
@@ -13879,6 +14032,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1118845208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13894,6 +14048,8 @@ MonoBehaviour:
   gem: {fileID: 1118845207}
   gemRenderer: {fileID: 1118845212}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1118845209
 Light:
   m_ObjectHideFlags: 0
@@ -14163,6 +14319,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1154363029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14178,6 +14335,8 @@ MonoBehaviour:
   gem: {fileID: 1154363028}
   gemRenderer: {fileID: 1154363033}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1154363030
 Light:
   m_ObjectHideFlags: 0
@@ -14368,6 +14527,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1157262671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14383,6 +14543,8 @@ MonoBehaviour:
   gem: {fileID: 1157262670}
   gemRenderer: {fileID: 1157262675}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1157262672
 Light:
   m_ObjectHideFlags: 0
@@ -14652,6 +14814,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1176607256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14667,6 +14830,8 @@ MonoBehaviour:
   gem: {fileID: 1176607255}
   gemRenderer: {fileID: 1176607260}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1176607257
 Light:
   m_ObjectHideFlags: 0
@@ -14955,6 +15120,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1238285389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14970,6 +15136,8 @@ MonoBehaviour:
   gem: {fileID: 1238285388}
   gemRenderer: {fileID: 1238285393}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1238285390
 Light:
   m_ObjectHideFlags: 0
@@ -15384,6 +15552,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1305990401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15399,6 +15568,8 @@ MonoBehaviour:
   gem: {fileID: 1305990400}
   gemRenderer: {fileID: 1305990405}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1305990402
 Light:
   m_ObjectHideFlags: 0
@@ -15589,6 +15760,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1310721952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15604,6 +15776,8 @@ MonoBehaviour:
   gem: {fileID: 1310721951}
   gemRenderer: {fileID: 1310721956}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1310721953
 Light:
   m_ObjectHideFlags: 0
@@ -15794,6 +15968,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1333963080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15809,6 +15984,8 @@ MonoBehaviour:
   gem: {fileID: 1333963079}
   gemRenderer: {fileID: 1333963084}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1333963081
 Light:
   m_ObjectHideFlags: 0
@@ -15968,6 +16145,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1345591153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15983,6 +16161,8 @@ MonoBehaviour:
   gem: {fileID: 1345591152}
   gemRenderer: {fileID: 1345591155}
   gemLight: {fileID: 1345591154}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1345591154
 Light:
   m_ObjectHideFlags: 0
@@ -16062,7 +16242,7 @@ GameObject:
   - component: {fileID: 1349545658}
   - component: {fileID: 1349545657}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Tutorial Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16203,6 +16383,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1356477372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16218,6 +16399,8 @@ MonoBehaviour:
   gem: {fileID: 1356477371}
   gemRenderer: {fileID: 1356477376}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1356477373
 Light:
   m_ObjectHideFlags: 0
@@ -16365,6 +16548,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16435,11 +16623,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2500863
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16475,6 +16658,8 @@ MonoBehaviour:
   gem: {fileID: 1385641504}
   gemRenderer: {fileID: 1385641502}
   gemLight: {fileID: 1385641505}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1385641504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16493,6 +16678,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &1385641505
 Light:
   m_ObjectHideFlags: 0
@@ -16687,6 +16873,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1405572727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16702,6 +16889,8 @@ MonoBehaviour:
   gem: {fileID: 1405572726}
   gemRenderer: {fileID: 1405572731}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1405572728
 Light:
   m_ObjectHideFlags: 0
@@ -16849,6 +17038,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16919,11 +17113,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2500863
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17022,6 +17211,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: crystal rock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: -4216859302048453862, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17092,11 +17286,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.2500863
       objectReference: {fileID: 0}
-    - target: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
     - target: {fileID: 1050015404475871976, guid: 819d03f9b5f2b6341a2338effb1d79bd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17132,6 +17321,8 @@ MonoBehaviour:
   gem: {fileID: 1429636284}
   gemRenderer: {fileID: 1429636282}
   gemLight: {fileID: 1429636285}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1429636284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17150,6 +17341,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &1429636285
 Light:
   m_ObjectHideFlags: 0
@@ -17265,6 +17457,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1444889895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17280,6 +17473,8 @@ MonoBehaviour:
   gem: {fileID: 1444889894}
   gemRenderer: {fileID: 1444889899}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1444889896
 Light:
   m_ObjectHideFlags: 0
@@ -17549,6 +17744,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1449995866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17564,6 +17760,8 @@ MonoBehaviour:
   gem: {fileID: 1449995865}
   gemRenderer: {fileID: 1449995870}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1449995867
 Light:
   m_ObjectHideFlags: 0
@@ -17754,6 +17952,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1475530672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17769,6 +17968,8 @@ MonoBehaviour:
   gem: {fileID: 1475530671}
   gemRenderer: {fileID: 1475530676}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1475530673
 Light:
   m_ObjectHideFlags: 0
@@ -17959,6 +18160,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1482311408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17974,6 +18176,8 @@ MonoBehaviour:
   gem: {fileID: 1482311407}
   gemRenderer: {fileID: 1482311412}
   gemLight: {fileID: 1482311409}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1482311409
 Light:
   m_ObjectHideFlags: 0
@@ -18164,6 +18368,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1491117339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18179,6 +18384,8 @@ MonoBehaviour:
   gem: {fileID: 1491117338}
   gemRenderer: {fileID: 1491117343}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1491117340
 Light:
   m_ObjectHideFlags: 0
@@ -18369,6 +18576,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1494617259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18384,6 +18592,8 @@ MonoBehaviour:
   gem: {fileID: 1494617258}
   gemRenderer: {fileID: 1494617263}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1494617260
 Light:
   m_ObjectHideFlags: 0
@@ -18711,6 +18921,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1523215378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18726,6 +18937,8 @@ MonoBehaviour:
   gem: {fileID: 1523215377}
   gemRenderer: {fileID: 1523215379}
   gemLight: {fileID: 1523215374}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!23 &1523215379 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3907355935067576919, guid: c8919961b2f4c4b40a35753481ce8b0a,
@@ -18787,6 +19000,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1524147856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18802,6 +19016,8 @@ MonoBehaviour:
   gem: {fileID: 1524147855}
   gemRenderer: {fileID: 1524147860}
   gemLight: {fileID: 1524147857}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1524147857
 Light:
   m_ObjectHideFlags: 0
@@ -18992,6 +19208,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1524426808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19007,6 +19224,8 @@ MonoBehaviour:
   gem: {fileID: 1524426807}
   gemRenderer: {fileID: 1524426812}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1524426809
 Light:
   m_ObjectHideFlags: 0
@@ -19197,6 +19416,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1527487888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19212,6 +19432,8 @@ MonoBehaviour:
   gem: {fileID: 1527487887}
   gemRenderer: {fileID: 1527487892}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1527487889
 Light:
   m_ObjectHideFlags: 0
@@ -19402,6 +19624,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1531829061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19417,6 +19640,8 @@ MonoBehaviour:
   gem: {fileID: 1531829060}
   gemRenderer: {fileID: 1531829065}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1531829062
 Light:
   m_ObjectHideFlags: 0
@@ -19573,6 +19798,8 @@ MonoBehaviour:
   gem: {fileID: 1576382655}
   gemRenderer: {fileID: 1576382659}
   gemLight: {fileID: 1576382656}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1576382655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19591,6 +19818,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &1576382656
 Light:
   m_ObjectHideFlags: 0
@@ -19741,6 +19969,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1580990748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19756,6 +19985,8 @@ MonoBehaviour:
   gem: {fileID: 1580990747}
   gemRenderer: {fileID: 1580990752}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1580990749
 Light:
   m_ObjectHideFlags: 0
@@ -19946,6 +20177,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1598171262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19961,6 +20193,8 @@ MonoBehaviour:
   gem: {fileID: 1598171261}
   gemRenderer: {fileID: 1598171266}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1598171263
 Light:
   m_ObjectHideFlags: 0
@@ -20253,66 +20487,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -8801099591387298973, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -8754877754873337470, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -8641458363252849339, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -7865319383489425439, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -7799930802896516657, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -7388971806469089997, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -6134686024207786705, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -5314314872569458353, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -5161931856172543565, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
-    - target: {fileID: -4503888661962059457, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 17.217
-      objectReference: {fileID: 0}
-    - target: {fileID: -4503888661962059457, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.1228556
-      objectReference: {fileID: 0}
-    - target: {fileID: -4503888661962059457, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.455
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f527d153bbbaa544cbac250697e4f20d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20382,6 +20556,66 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.79994476
+      objectReference: {fileID: 0}
+    - target: {fileID: -8801099591387298973, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -8754877754873337470, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -8641458363252849339, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -7865319383489425439, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -7799930802896516657, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -7388971806469089997, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -6134686024207786705, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -5314314872569458353, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -5161931856172543565, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9f9d87f01bca6343ae3dcffa0a5d9de, type: 2}
+    - target: {fileID: -4503888661962059457, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.217
+      objectReference: {fileID: 0}
+    - target: {fileID: -4503888661962059457, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1228556
+      objectReference: {fileID: 0}
+    - target: {fileID: -4503888661962059457, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.455
       objectReference: {fileID: 0}
     - target: {fileID: -3890251508235582825, guid: f527d153bbbaa544cbac250697e4f20d,
         type: 3}
@@ -21215,6 +21449,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21233,6 +21469,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1611932143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21248,6 +21485,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21266,6 +21505,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1611932145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21281,6 +21521,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21299,6 +21541,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1611932147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21314,6 +21557,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21332,6 +21577,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1611932149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21347,6 +21593,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21365,6 +21613,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1611932151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21380,6 +21629,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21398,6 +21649,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1611932153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21413,6 +21665,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21431,6 +21685,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1611932155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21446,6 +21701,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21464,6 +21721,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!64 &1611932157
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21553,6 +21811,8 @@ MonoBehaviour:
   gem: {fileID: 1611932160}
   gemRenderer: {fileID: 1611932079}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21571,6 +21831,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932161
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21675,6 +21936,8 @@ MonoBehaviour:
   gem: {fileID: 1611932165}
   gemRenderer: {fileID: 1611932081}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21693,6 +21956,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932166
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21797,6 +22061,8 @@ MonoBehaviour:
   gem: {fileID: 1611932170}
   gemRenderer: {fileID: 1611932083}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21815,6 +22081,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932171
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21919,6 +22186,8 @@ MonoBehaviour:
   gem: {fileID: 1611932175}
   gemRenderer: {fileID: 1611932085}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21937,6 +22206,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932176
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22041,6 +22311,8 @@ MonoBehaviour:
   gem: {fileID: 1611932180}
   gemRenderer: {fileID: 1611932087}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22059,6 +22331,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932181
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22163,6 +22436,8 @@ MonoBehaviour:
   gem: {fileID: 1611932185}
   gemRenderer: {fileID: 1611932089}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22181,6 +22456,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932186
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22285,6 +22561,8 @@ MonoBehaviour:
   gem: {fileID: 1611932190}
   gemRenderer: {fileID: 1611932091}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22303,6 +22581,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932191
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22407,6 +22686,8 @@ MonoBehaviour:
   gem: {fileID: 1611932195}
   gemRenderer: {fileID: 1611932093}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22425,6 +22706,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22529,6 +22811,8 @@ MonoBehaviour:
   gem: {fileID: 1611932200}
   gemRenderer: {fileID: 1611932095}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22547,6 +22831,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932201
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22651,6 +22936,8 @@ MonoBehaviour:
   gem: {fileID: 1611932205}
   gemRenderer: {fileID: 1611932097}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22669,6 +22956,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932206
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22773,6 +23061,8 @@ MonoBehaviour:
   gem: {fileID: 1611932210}
   gemRenderer: {fileID: 1611932099}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22791,6 +23081,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932211
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22895,6 +23186,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 1611932101}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22913,6 +23206,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932216
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23017,6 +23311,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 1611932103}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23035,6 +23331,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932221
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23139,6 +23436,8 @@ MonoBehaviour:
   gem: {fileID: 1611932225}
   gemRenderer: {fileID: 1611932105}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23157,6 +23456,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932226
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23261,6 +23561,8 @@ MonoBehaviour:
   gem: {fileID: 1611932230}
   gemRenderer: {fileID: 1611932107}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23279,6 +23581,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932231
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23383,6 +23686,8 @@ MonoBehaviour:
   gem: {fileID: 1611932235}
   gemRenderer: {fileID: 1611932109}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23401,6 +23706,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932236
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23505,6 +23811,8 @@ MonoBehaviour:
   gem: {fileID: 1611932240}
   gemRenderer: {fileID: 1611932111}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23523,6 +23831,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932241
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23627,6 +23936,8 @@ MonoBehaviour:
   gem: {fileID: 1611932245}
   gemRenderer: {fileID: 1611932113}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23645,6 +23956,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932246
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23749,6 +24061,8 @@ MonoBehaviour:
   gem: {fileID: 1611932250}
   gemRenderer: {fileID: 1611932115}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23767,6 +24081,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932251
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23871,6 +24186,8 @@ MonoBehaviour:
   gem: {fileID: 1611932255}
   gemRenderer: {fileID: 1611932117}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23889,6 +24206,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932256
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23993,6 +24311,8 @@ MonoBehaviour:
   gem: {fileID: 1611932260}
   gemRenderer: {fileID: 1611932119}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24011,6 +24331,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932261
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24115,6 +24436,8 @@ MonoBehaviour:
   gem: {fileID: 1611932265}
   gemRenderer: {fileID: 1611932121}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24133,6 +24456,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932266
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24237,6 +24561,8 @@ MonoBehaviour:
   gem: {fileID: 1611932270}
   gemRenderer: {fileID: 1611932123}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24255,6 +24581,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932271
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24359,6 +24686,8 @@ MonoBehaviour:
   gem: {fileID: 1611932275}
   gemRenderer: {fileID: 1611932125}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24377,6 +24706,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932276
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24481,6 +24811,8 @@ MonoBehaviour:
   gem: {fileID: 1611932280}
   gemRenderer: {fileID: 1611932127}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24499,6 +24831,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932281
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24603,6 +24936,8 @@ MonoBehaviour:
   gem: {fileID: 1611932285}
   gemRenderer: {fileID: 1611932129}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24621,6 +24956,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932286
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24725,6 +25061,8 @@ MonoBehaviour:
   gem: {fileID: 1611932290}
   gemRenderer: {fileID: 1611932131}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24743,6 +25081,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932291
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24847,6 +25186,8 @@ MonoBehaviour:
   gem: {fileID: 1611932295}
   gemRenderer: {fileID: 1611932133}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24865,6 +25206,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932296
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24969,6 +25311,8 @@ MonoBehaviour:
   gem: {fileID: 1611932300}
   gemRenderer: {fileID: 1611932135}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24987,6 +25331,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932301
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25091,6 +25436,8 @@ MonoBehaviour:
   gem: {fileID: 1611932305}
   gemRenderer: {fileID: 1611932137}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25109,6 +25456,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932306
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25213,6 +25561,8 @@ MonoBehaviour:
   gem: {fileID: 1611932310}
   gemRenderer: {fileID: 1611932139}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1611932310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25231,6 +25581,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1611932311
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25362,6 +25713,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.2048
       objectReference: {fileID: 0}
+    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
     - target: {fileID: 1135244083771908629, guid: c8919961b2f4c4b40a35753481ce8b0a,
         type: 3}
       propertyPath: m_IsActive
@@ -25382,12 +25739,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8919961b2f4c4b40a35753481ce8b0a, type: 3}
 --- !u!1 &1612601069 stripped
@@ -25420,6 +25771,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1612601072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25435,6 +25787,8 @@ MonoBehaviour:
   gem: {fileID: 1612601071}
   gemRenderer: {fileID: 1612601070}
   gemLight: {fileID: 1612601073}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1612601073
 Light:
   m_ObjectHideFlags: 0
@@ -25668,6 +26022,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1616967892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25683,6 +26038,8 @@ MonoBehaviour:
   gem: {fileID: 1616967891}
   gemRenderer: {fileID: 1616967896}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1616967893
 Light:
   m_ObjectHideFlags: 0
@@ -25873,6 +26230,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1617812290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25888,6 +26246,8 @@ MonoBehaviour:
   gem: {fileID: 1617812289}
   gemRenderer: {fileID: 1617812294}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1617812291
 Light:
   m_ObjectHideFlags: 0
@@ -26078,6 +26438,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1631531324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26093,6 +26454,8 @@ MonoBehaviour:
   gem: {fileID: 1631531323}
   gemRenderer: {fileID: 1631531328}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1631531325
 Light:
   m_ObjectHideFlags: 0
@@ -26283,6 +26646,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1648332906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26298,6 +26662,8 @@ MonoBehaviour:
   gem: {fileID: 1648332905}
   gemRenderer: {fileID: 1648332910}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1648332907
 Light:
   m_ObjectHideFlags: 0
@@ -26520,6 +26886,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2.0014312
       objectReference: {fileID: 0}
+    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
     - target: {fileID: 1135244083771908629, guid: c8919961b2f4c4b40a35753481ce8b0a,
         type: 3}
       propertyPath: m_IsActive
@@ -26540,12 +26912,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8919961b2f4c4b40a35753481ce8b0a, type: 3}
 --- !u!1 &1656360167 stripped
@@ -26578,6 +26944,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1656360170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26593,6 +26960,8 @@ MonoBehaviour:
   gem: {fileID: 1656360169}
   gemRenderer: {fileID: 1656360168}
   gemLight: {fileID: 1656360171}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1656360171
 Light:
   m_ObjectHideFlags: 0
@@ -26784,6 +27153,12 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -1.2048
       objectReference: {fileID: 0}
+    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
     - target: {fileID: 1135244083771908629, guid: c8919961b2f4c4b40a35753481ce8b0a,
         type: 3}
       propertyPath: m_IsActive
@@ -26804,12 +27179,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8919961b2f4c4b40a35753481ce8b0a, type: 3}
 --- !u!1 &1657279811 stripped
@@ -26886,6 +27255,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1698032948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26901,6 +27271,8 @@ MonoBehaviour:
   gem: {fileID: 1698032947}
   gemRenderer: {fileID: 1698032952}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1698032949
 Light:
   m_ObjectHideFlags: 0
@@ -27188,6 +27560,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1721227122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27203,6 +27576,8 @@ MonoBehaviour:
   gem: {fileID: 1721227121}
   gemRenderer: {fileID: 1721227126}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1721227123
 Light:
   m_ObjectHideFlags: 0
@@ -27393,6 +27768,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1729977724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27408,6 +27784,8 @@ MonoBehaviour:
   gem: {fileID: 1729977723}
   gemRenderer: {fileID: 1729977728}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1729977725
 Light:
   m_ObjectHideFlags: 0
@@ -27624,6 +28002,8 @@ MonoBehaviour:
   gem: {fileID: 1733192845}
   gemRenderer: {fileID: 1733192848}
   gemLight: {fileID: 1733192843}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1733192845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27642,6 +28022,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!135 &1733192846
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27811,6 +28192,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1753715045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27826,6 +28208,8 @@ MonoBehaviour:
   gem: {fileID: 1753715044}
   gemRenderer: {fileID: 1753715049}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1753715046
 Light:
   m_ObjectHideFlags: 0
@@ -28398,6 +28782,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1846726753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28413,6 +28798,8 @@ MonoBehaviour:
   gem: {fileID: 1846726752}
   gemRenderer: {fileID: 1846726757}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1846726754
 Light:
   m_ObjectHideFlags: 0
@@ -28603,6 +28990,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1851497284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28618,6 +29006,8 @@ MonoBehaviour:
   gem: {fileID: 1851497283}
   gemRenderer: {fileID: 1851497288}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1851497285
 Light:
   m_ObjectHideFlags: 0
@@ -28808,6 +29198,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1879041155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28823,6 +29214,8 @@ MonoBehaviour:
   gem: {fileID: 1879041154}
   gemRenderer: {fileID: 1879041159}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1879041156
 Light:
   m_ObjectHideFlags: 0
@@ -29092,6 +29485,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1894247088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29107,6 +29501,8 @@ MonoBehaviour:
   gem: {fileID: 1894247087}
   gemRenderer: {fileID: 1894247092}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1894247089
 Light:
   m_ObjectHideFlags: 0
@@ -29263,6 +29659,8 @@ MonoBehaviour:
   gem: {fileID: 1919762377}
   gemRenderer: {fileID: 1919762381}
   gemLight: {fileID: 1919762378}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!114 &1919762377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29281,6 +29679,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!108 &1919762378
 Light:
   m_ObjectHideFlags: 0
@@ -29523,6 +29922,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1972009869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29538,6 +29938,8 @@ MonoBehaviour:
   gem: {fileID: 1972009868}
   gemRenderer: {fileID: 1972009873}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1972009870
 Light:
   m_ObjectHideFlags: 0
@@ -29728,6 +30130,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &1992224438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29743,6 +30146,8 @@ MonoBehaviour:
   gem: {fileID: 1992224437}
   gemRenderer: {fileID: 1992224442}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &1992224439
 Light:
   m_ObjectHideFlags: 0
@@ -30044,6 +30449,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.4113492
       objectReference: {fileID: 0}
+    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
+        type: 3}
     - target: {fileID: 1135244083771908629, guid: c8919961b2f4c4b40a35753481ce8b0a,
         type: 3}
       propertyPath: m_IsActive
@@ -30064,12 +30475,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1050015404475871976, guid: c8919961b2f4c4b40a35753481ce8b0a,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 5775865398287329665, guid: f527d153bbbaa544cbac250697e4f20d,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8919961b2f4c4b40a35753481ce8b0a, type: 3}
 --- !u!1 &2053069080
@@ -30127,6 +30532,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &2053069083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30142,6 +30548,8 @@ MonoBehaviour:
   gem: {fileID: 2053069082}
   gemRenderer: {fileID: 2053069087}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &2053069084
 Light:
   m_ObjectHideFlags: 0
@@ -30490,6 +30898,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &2106429781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30505,6 +30914,8 @@ MonoBehaviour:
   gem: {fileID: 2106429780}
   gemRenderer: {fileID: 2106429785}
   gemLight: {fileID: 2106429782}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &2106429782
 Light:
   m_ObjectHideFlags: 0
@@ -30695,6 +31106,7 @@ MonoBehaviour:
   rActive: 0
   gActive: 0
   bActive: 0
+  allActive: 0
 --- !u!114 &2145585315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30710,6 +31122,8 @@ MonoBehaviour:
   gem: {fileID: 2145585314}
   gemRenderer: {fileID: 2145585319}
   gemLight: {fileID: 0}
+  gemCount: 0
+  alreadyCounted: 0
 --- !u!108 &2145585316
 Light:
   m_ObjectHideFlags: 0
