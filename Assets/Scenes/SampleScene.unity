@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.01620062, g: 0.02407895, b: 0.037589964, a: 1}
+  m_IndirectSpecularColor: {r: 0.013746474, g: 0.017539486, b: 0.019396054, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -191,6 +191,7 @@ MonoBehaviour:
   gem: {fileID: 1468438}
   gemRenderer: {fileID: 1468443}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1468440
@@ -862,6 +863,7 @@ MonoBehaviour:
   gem: {fileID: 98976081}
   gemRenderer: {fileID: 98976083}
   gemLight: {fileID: 98976080}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!23 &98976083 stripped
@@ -941,6 +943,7 @@ MonoBehaviour:
   gem: {fileID: 104702026}
   gemRenderer: {fileID: 104702031}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &104702028
@@ -1267,6 +1270,7 @@ MonoBehaviour:
   gem: {fileID: 122277445}
   gemRenderer: {fileID: 122277447}
   gemLight: {fileID: 122277444}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!23 &122277447 stripped
@@ -1394,6 +1398,7 @@ MonoBehaviour:
   gem: {fileID: 143578708}
   gemRenderer: {fileID: 143578711}
   gemLight: {fileID: 143578710}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &143578710
@@ -1533,6 +1538,7 @@ MonoBehaviour:
   gem: {fileID: 151953425}
   gemRenderer: {fileID: 151953430}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &151953427
@@ -1798,6 +1804,7 @@ MonoBehaviour:
   gem: {fileID: 157281555}
   gemRenderer: {fileID: 157281553}
   gemLight: {fileID: 157281556}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &157281555
@@ -2107,6 +2114,7 @@ MonoBehaviour:
   gem: {fileID: 210516743}
   gemRenderer: {fileID: 210516748}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &210516745
@@ -2315,6 +2323,7 @@ MonoBehaviour:
   gem: {fileID: 225654770}
   gemRenderer: {fileID: 225654775}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &225654772
@@ -2542,6 +2551,7 @@ MonoBehaviour:
   gem: {fileID: 244432113}
   gemRenderer: {fileID: 244432118}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &244432115
@@ -2750,6 +2760,7 @@ MonoBehaviour:
   gem: {fileID: 245717066}
   gemRenderer: {fileID: 245717071}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &245717068
@@ -2958,6 +2969,7 @@ MonoBehaviour:
   gem: {fileID: 260276622}
   gemRenderer: {fileID: 260276627}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &260276624
@@ -3116,6 +3128,7 @@ MonoBehaviour:
   gem: {fileID: 260715736}
   gemRenderer: {fileID: 260715740}
   gemLight: {fileID: 260715737}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &260715736
@@ -3323,6 +3336,7 @@ MonoBehaviour:
   gem: {fileID: 266752180}
   gemRenderer: {fileID: 266752185}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &266752182
@@ -3610,6 +3624,7 @@ MonoBehaviour:
   gem: {fileID: 271850732}
   gemRenderer: {fileID: 271850737}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &271850734
@@ -4043,6 +4058,7 @@ MonoBehaviour:
   gem: {fileID: 292338483}
   gemRenderer: {fileID: 292338481}
   gemLight: {fileID: 292338484}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &292338483
@@ -4195,6 +4211,7 @@ MonoBehaviour:
   gem: {fileID: 312656394}
   gemRenderer: {fileID: 312656399}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &312656396
@@ -4725,6 +4742,7 @@ MonoBehaviour:
   gem: {fileID: 379825076}
   gemRenderer: {fileID: 379825081}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &379825078
@@ -5204,6 +5222,7 @@ MonoBehaviour:
   gem: {fileID: 405052781}
   gemRenderer: {fileID: 405052786}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &405052783
@@ -5570,6 +5589,7 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 435253956}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &435253953
@@ -5886,6 +5906,7 @@ MonoBehaviour:
   gem: {fileID: 466157797}
   gemRenderer: {fileID: 466157802}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &466157799
@@ -6094,6 +6115,7 @@ MonoBehaviour:
   gem: {fileID: 470856736}
   gemRenderer: {fileID: 470856741}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &470856738
@@ -6302,6 +6324,7 @@ MonoBehaviour:
   gem: {fileID: 495281913}
   gemRenderer: {fileID: 495281918}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &495281915
@@ -6627,6 +6650,7 @@ MonoBehaviour:
   gem: {fileID: 507534588}
   gemRenderer: {fileID: 507534593}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &507534590
@@ -6913,6 +6937,7 @@ MonoBehaviour:
   gem: {fileID: 537139772}
   gemRenderer: {fileID: 537139777}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &537139774
@@ -7121,6 +7146,7 @@ MonoBehaviour:
   gem: {fileID: 544266423}
   gemRenderer: {fileID: 544266428}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &544266425
@@ -7279,6 +7305,7 @@ MonoBehaviour:
   gem: {fileID: 560687966}
   gemRenderer: {fileID: 560687970}
   gemLight: {fileID: 560687967}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &560687966
@@ -7466,6 +7493,7 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 574448022}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &574448019
@@ -7693,6 +7721,7 @@ MonoBehaviour:
   gem: {fileID: 596277948}
   gemRenderer: {fileID: 596277953}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &596277950
@@ -7921,6 +7950,7 @@ MonoBehaviour:
   gem: {fileID: 631792213}
   gemRenderer: {fileID: 631792218}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &631792215
@@ -8129,6 +8159,7 @@ MonoBehaviour:
   gem: {fileID: 642583863}
   gemRenderer: {fileID: 642583868}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &642583865
@@ -8337,6 +8368,7 @@ MonoBehaviour:
   gem: {fileID: 642701959}
   gemRenderer: {fileID: 642701964}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &642701961
@@ -8564,6 +8596,7 @@ MonoBehaviour:
   gem: {fileID: 656399734}
   gemRenderer: {fileID: 656399739}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &656399736
@@ -8850,6 +8883,7 @@ MonoBehaviour:
   gem: {fileID: 668626077}
   gemRenderer: {fileID: 668626082}
   gemLight: {fileID: 668626079}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &668626079
@@ -9116,6 +9150,7 @@ MonoBehaviour:
   gem: {fileID: 674007650}
   gemRenderer: {fileID: 674007652}
   gemLight: {fileID: 674007647}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!23 &674007652 stripped
@@ -9195,6 +9230,7 @@ MonoBehaviour:
   gem: {fileID: 702042731}
   gemRenderer: {fileID: 702042736}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &702042733
@@ -9824,6 +9860,7 @@ MonoBehaviour:
   gem: {fileID: 780491886}
   gemRenderer: {fileID: 780491890}
   gemLight: {fileID: 780491887}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &780491886
@@ -10145,6 +10182,7 @@ MonoBehaviour:
   gem: {fileID: 830689053}
   gemRenderer: {fileID: 830689058}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &830689055
@@ -10353,6 +10391,7 @@ MonoBehaviour:
   gem: {fileID: 835901070}
   gemRenderer: {fileID: 835901075}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &835901072
@@ -10659,6 +10698,7 @@ MonoBehaviour:
   gem: {fileID: 855895109}
   gemRenderer: {fileID: 855895114}
   gemLight: {fileID: 855895111}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &855895111
@@ -11122,6 +11162,7 @@ MonoBehaviour:
   gem: {fileID: 940253418}
   gemRenderer: {fileID: 940253423}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &940253420
@@ -11445,6 +11486,7 @@ MonoBehaviour:
   gem: {fileID: 975221973}
   gemRenderer: {fileID: 975221978}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &975221975
@@ -11925,6 +11967,7 @@ MonoBehaviour:
   gem: {fileID: 1022067782}
   gemRenderer: {fileID: 1022067787}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1022067784
@@ -12143,6 +12186,7 @@ MonoBehaviour:
   gem: {fileID: 1027224124}
   gemRenderer: {fileID: 1027224127}
   gemLight: {fileID: 1027224122}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1027224124
@@ -12289,6 +12333,7 @@ MonoBehaviour:
   gem: {fileID: 1038760780}
   gemRenderer: {fileID: 1038760785}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1038760782
@@ -12497,6 +12542,7 @@ MonoBehaviour:
   gem: {fileID: 1041908636}
   gemRenderer: {fileID: 1041908641}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1041908638
@@ -12705,6 +12751,7 @@ MonoBehaviour:
   gem: {fileID: 1042156566}
   gemRenderer: {fileID: 1042156571}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1042156568
@@ -13008,6 +13055,7 @@ MonoBehaviour:
   gem: {fileID: 1061273134}
   gemRenderer: {fileID: 1061273139}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1061273136
@@ -13216,6 +13264,7 @@ MonoBehaviour:
   gem: {fileID: 1068968708}
   gemRenderer: {fileID: 1068968713}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1068968710
@@ -13369,7 +13418,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1071827182
 Light:
   m_ObjectHideFlags: 0
@@ -13613,6 +13662,7 @@ MonoBehaviour:
   gem: {fileID: 1101167034}
   gemRenderer: {fileID: 1101167039}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1101167036
@@ -13821,6 +13871,7 @@ MonoBehaviour:
   gem: {fileID: 1102662813}
   gemRenderer: {fileID: 1102662818}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1102662815
@@ -14048,6 +14099,7 @@ MonoBehaviour:
   gem: {fileID: 1118845207}
   gemRenderer: {fileID: 1118845212}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1118845209
@@ -14335,6 +14387,7 @@ MonoBehaviour:
   gem: {fileID: 1154363028}
   gemRenderer: {fileID: 1154363033}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1154363030
@@ -14543,6 +14596,7 @@ MonoBehaviour:
   gem: {fileID: 1157262670}
   gemRenderer: {fileID: 1157262675}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1157262672
@@ -14830,6 +14884,7 @@ MonoBehaviour:
   gem: {fileID: 1176607255}
   gemRenderer: {fileID: 1176607260}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1176607257
@@ -15136,6 +15191,7 @@ MonoBehaviour:
   gem: {fileID: 1238285388}
   gemRenderer: {fileID: 1238285393}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1238285390
@@ -15568,6 +15624,7 @@ MonoBehaviour:
   gem: {fileID: 1305990400}
   gemRenderer: {fileID: 1305990405}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1305990402
@@ -15776,6 +15833,7 @@ MonoBehaviour:
   gem: {fileID: 1310721951}
   gemRenderer: {fileID: 1310721956}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1310721953
@@ -15984,6 +16042,7 @@ MonoBehaviour:
   gem: {fileID: 1333963079}
   gemRenderer: {fileID: 1333963084}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1333963081
@@ -16161,6 +16220,7 @@ MonoBehaviour:
   gem: {fileID: 1345591152}
   gemRenderer: {fileID: 1345591155}
   gemLight: {fileID: 1345591154}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1345591154
@@ -16399,6 +16459,7 @@ MonoBehaviour:
   gem: {fileID: 1356477371}
   gemRenderer: {fileID: 1356477376}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1356477373
@@ -16658,6 +16719,7 @@ MonoBehaviour:
   gem: {fileID: 1385641504}
   gemRenderer: {fileID: 1385641502}
   gemLight: {fileID: 1385641505}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1385641504
@@ -16889,6 +16951,7 @@ MonoBehaviour:
   gem: {fileID: 1405572726}
   gemRenderer: {fileID: 1405572731}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1405572728
@@ -17321,6 +17384,7 @@ MonoBehaviour:
   gem: {fileID: 1429636284}
   gemRenderer: {fileID: 1429636282}
   gemLight: {fileID: 1429636285}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1429636284
@@ -17473,6 +17537,7 @@ MonoBehaviour:
   gem: {fileID: 1444889894}
   gemRenderer: {fileID: 1444889899}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1444889896
@@ -17760,6 +17825,7 @@ MonoBehaviour:
   gem: {fileID: 1449995865}
   gemRenderer: {fileID: 1449995870}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1449995867
@@ -17968,6 +18034,7 @@ MonoBehaviour:
   gem: {fileID: 1475530671}
   gemRenderer: {fileID: 1475530676}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1475530673
@@ -18176,6 +18243,7 @@ MonoBehaviour:
   gem: {fileID: 1482311407}
   gemRenderer: {fileID: 1482311412}
   gemLight: {fileID: 1482311409}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1482311409
@@ -18384,6 +18452,7 @@ MonoBehaviour:
   gem: {fileID: 1491117338}
   gemRenderer: {fileID: 1491117343}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1491117340
@@ -18592,6 +18661,7 @@ MonoBehaviour:
   gem: {fileID: 1494617258}
   gemRenderer: {fileID: 1494617263}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1494617260
@@ -18937,6 +19007,7 @@ MonoBehaviour:
   gem: {fileID: 1523215377}
   gemRenderer: {fileID: 1523215379}
   gemLight: {fileID: 1523215374}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!23 &1523215379 stripped
@@ -19016,6 +19087,7 @@ MonoBehaviour:
   gem: {fileID: 1524147855}
   gemRenderer: {fileID: 1524147860}
   gemLight: {fileID: 1524147857}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1524147857
@@ -19224,6 +19296,7 @@ MonoBehaviour:
   gem: {fileID: 1524426807}
   gemRenderer: {fileID: 1524426812}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1524426809
@@ -19432,6 +19505,7 @@ MonoBehaviour:
   gem: {fileID: 1527487887}
   gemRenderer: {fileID: 1527487892}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1527487889
@@ -19640,6 +19714,7 @@ MonoBehaviour:
   gem: {fileID: 1531829060}
   gemRenderer: {fileID: 1531829065}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1531829062
@@ -19798,6 +19873,7 @@ MonoBehaviour:
   gem: {fileID: 1576382655}
   gemRenderer: {fileID: 1576382659}
   gemLight: {fileID: 1576382656}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1576382655
@@ -19985,6 +20061,7 @@ MonoBehaviour:
   gem: {fileID: 1580990747}
   gemRenderer: {fileID: 1580990752}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1580990749
@@ -20193,6 +20270,7 @@ MonoBehaviour:
   gem: {fileID: 1598171261}
   gemRenderer: {fileID: 1598171266}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1598171263
@@ -21449,6 +21527,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932142
@@ -21485,6 +21564,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932144
@@ -21521,6 +21601,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932146
@@ -21557,6 +21638,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932148
@@ -21593,6 +21675,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932150
@@ -21629,6 +21712,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932152
@@ -21665,6 +21749,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932154
@@ -21701,6 +21786,7 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932156
@@ -21811,6 +21897,7 @@ MonoBehaviour:
   gem: {fileID: 1611932160}
   gemRenderer: {fileID: 1611932079}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932160
@@ -21936,6 +22023,7 @@ MonoBehaviour:
   gem: {fileID: 1611932165}
   gemRenderer: {fileID: 1611932081}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932165
@@ -22061,6 +22149,7 @@ MonoBehaviour:
   gem: {fileID: 1611932170}
   gemRenderer: {fileID: 1611932083}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932170
@@ -22186,6 +22275,7 @@ MonoBehaviour:
   gem: {fileID: 1611932175}
   gemRenderer: {fileID: 1611932085}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932175
@@ -22311,6 +22401,7 @@ MonoBehaviour:
   gem: {fileID: 1611932180}
   gemRenderer: {fileID: 1611932087}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932180
@@ -22436,6 +22527,7 @@ MonoBehaviour:
   gem: {fileID: 1611932185}
   gemRenderer: {fileID: 1611932089}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932185
@@ -22561,6 +22653,7 @@ MonoBehaviour:
   gem: {fileID: 1611932190}
   gemRenderer: {fileID: 1611932091}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932190
@@ -22686,6 +22779,7 @@ MonoBehaviour:
   gem: {fileID: 1611932195}
   gemRenderer: {fileID: 1611932093}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932195
@@ -22811,6 +22905,7 @@ MonoBehaviour:
   gem: {fileID: 1611932200}
   gemRenderer: {fileID: 1611932095}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932200
@@ -22936,6 +23031,7 @@ MonoBehaviour:
   gem: {fileID: 1611932205}
   gemRenderer: {fileID: 1611932097}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932205
@@ -23061,6 +23157,7 @@ MonoBehaviour:
   gem: {fileID: 1611932210}
   gemRenderer: {fileID: 1611932099}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932210
@@ -23186,6 +23283,7 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 1611932101}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932215
@@ -23311,6 +23409,7 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 1611932103}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932220
@@ -23436,6 +23535,7 @@ MonoBehaviour:
   gem: {fileID: 1611932225}
   gemRenderer: {fileID: 1611932105}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932225
@@ -23561,6 +23661,7 @@ MonoBehaviour:
   gem: {fileID: 1611932230}
   gemRenderer: {fileID: 1611932107}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932230
@@ -23686,6 +23787,7 @@ MonoBehaviour:
   gem: {fileID: 1611932235}
   gemRenderer: {fileID: 1611932109}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932235
@@ -23811,6 +23913,7 @@ MonoBehaviour:
   gem: {fileID: 1611932240}
   gemRenderer: {fileID: 1611932111}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932240
@@ -23936,6 +24039,7 @@ MonoBehaviour:
   gem: {fileID: 1611932245}
   gemRenderer: {fileID: 1611932113}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932245
@@ -24061,6 +24165,7 @@ MonoBehaviour:
   gem: {fileID: 1611932250}
   gemRenderer: {fileID: 1611932115}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932250
@@ -24186,6 +24291,7 @@ MonoBehaviour:
   gem: {fileID: 1611932255}
   gemRenderer: {fileID: 1611932117}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932255
@@ -24311,6 +24417,7 @@ MonoBehaviour:
   gem: {fileID: 1611932260}
   gemRenderer: {fileID: 1611932119}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932260
@@ -24436,6 +24543,7 @@ MonoBehaviour:
   gem: {fileID: 1611932265}
   gemRenderer: {fileID: 1611932121}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932265
@@ -24561,6 +24669,7 @@ MonoBehaviour:
   gem: {fileID: 1611932270}
   gemRenderer: {fileID: 1611932123}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932270
@@ -24686,6 +24795,7 @@ MonoBehaviour:
   gem: {fileID: 1611932275}
   gemRenderer: {fileID: 1611932125}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932275
@@ -24811,6 +24921,7 @@ MonoBehaviour:
   gem: {fileID: 1611932280}
   gemRenderer: {fileID: 1611932127}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932280
@@ -24936,6 +25047,7 @@ MonoBehaviour:
   gem: {fileID: 1611932285}
   gemRenderer: {fileID: 1611932129}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932285
@@ -25061,6 +25173,7 @@ MonoBehaviour:
   gem: {fileID: 1611932290}
   gemRenderer: {fileID: 1611932131}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932290
@@ -25186,6 +25299,7 @@ MonoBehaviour:
   gem: {fileID: 1611932295}
   gemRenderer: {fileID: 1611932133}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932295
@@ -25311,6 +25425,7 @@ MonoBehaviour:
   gem: {fileID: 1611932300}
   gemRenderer: {fileID: 1611932135}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932300
@@ -25436,6 +25551,7 @@ MonoBehaviour:
   gem: {fileID: 1611932305}
   gemRenderer: {fileID: 1611932137}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932305
@@ -25561,6 +25677,7 @@ MonoBehaviour:
   gem: {fileID: 1611932310}
   gemRenderer: {fileID: 1611932139}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1611932310
@@ -25787,6 +25904,7 @@ MonoBehaviour:
   gem: {fileID: 1612601071}
   gemRenderer: {fileID: 1612601070}
   gemLight: {fileID: 1612601073}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1612601073
@@ -26038,6 +26156,7 @@ MonoBehaviour:
   gem: {fileID: 1616967891}
   gemRenderer: {fileID: 1616967896}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1616967893
@@ -26246,6 +26365,7 @@ MonoBehaviour:
   gem: {fileID: 1617812289}
   gemRenderer: {fileID: 1617812294}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1617812291
@@ -26454,6 +26574,7 @@ MonoBehaviour:
   gem: {fileID: 1631531323}
   gemRenderer: {fileID: 1631531328}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1631531325
@@ -26662,6 +26783,7 @@ MonoBehaviour:
   gem: {fileID: 1648332905}
   gemRenderer: {fileID: 1648332910}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1648332907
@@ -26960,6 +27082,7 @@ MonoBehaviour:
   gem: {fileID: 1656360169}
   gemRenderer: {fileID: 1656360168}
   gemLight: {fileID: 1656360171}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1656360171
@@ -27271,6 +27394,7 @@ MonoBehaviour:
   gem: {fileID: 1698032947}
   gemRenderer: {fileID: 1698032952}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1698032949
@@ -27576,6 +27700,7 @@ MonoBehaviour:
   gem: {fileID: 1721227121}
   gemRenderer: {fileID: 1721227126}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1721227123
@@ -27784,6 +27909,7 @@ MonoBehaviour:
   gem: {fileID: 1729977723}
   gemRenderer: {fileID: 1729977728}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1729977725
@@ -28002,6 +28128,7 @@ MonoBehaviour:
   gem: {fileID: 1733192845}
   gemRenderer: {fileID: 1733192848}
   gemLight: {fileID: 1733192843}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1733192845
@@ -28208,6 +28335,7 @@ MonoBehaviour:
   gem: {fileID: 1753715044}
   gemRenderer: {fileID: 1753715049}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1753715046
@@ -28798,6 +28926,7 @@ MonoBehaviour:
   gem: {fileID: 1846726752}
   gemRenderer: {fileID: 1846726757}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1846726754
@@ -29006,6 +29135,7 @@ MonoBehaviour:
   gem: {fileID: 1851497283}
   gemRenderer: {fileID: 1851497288}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1851497285
@@ -29214,6 +29344,7 @@ MonoBehaviour:
   gem: {fileID: 1879041154}
   gemRenderer: {fileID: 1879041159}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1879041156
@@ -29501,6 +29632,7 @@ MonoBehaviour:
   gem: {fileID: 1894247087}
   gemRenderer: {fileID: 1894247092}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1894247089
@@ -29659,6 +29791,7 @@ MonoBehaviour:
   gem: {fileID: 1919762377}
   gemRenderer: {fileID: 1919762381}
   gemLight: {fileID: 1919762378}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!114 &1919762377
@@ -29938,6 +30071,7 @@ MonoBehaviour:
   gem: {fileID: 1972009868}
   gemRenderer: {fileID: 1972009873}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1972009870
@@ -30146,6 +30280,7 @@ MonoBehaviour:
   gem: {fileID: 1992224437}
   gemRenderer: {fileID: 1992224442}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &1992224439
@@ -30548,6 +30683,7 @@ MonoBehaviour:
   gem: {fileID: 2053069082}
   gemRenderer: {fileID: 2053069087}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &2053069084
@@ -30914,6 +31050,7 @@ MonoBehaviour:
   gem: {fileID: 2106429780}
   gemRenderer: {fileID: 2106429785}
   gemLight: {fileID: 2106429782}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &2106429782
@@ -31122,6 +31259,7 @@ MonoBehaviour:
   gem: {fileID: 2145585314}
   gemRenderer: {fileID: 2145585319}
   gemLight: {fileID: 0}
+  gemTotal: 129
   gemCount: 0
   alreadyCounted: 0
 --- !u!108 &2145585316
