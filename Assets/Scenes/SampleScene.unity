@@ -191,9 +191,8 @@ MonoBehaviour:
   gem: {fileID: 1468438}
   gemRenderer: {fileID: 1468443}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1468440
 Light:
   m_ObjectHideFlags: 0
@@ -551,7 +550,7 @@ Transform:
   m_LocalScale: {x: 34.259, y: 34.259, z: 34.259}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &10726505
 BoxCollider:
@@ -863,9 +862,8 @@ MonoBehaviour:
   gem: {fileID: 98976081}
   gemRenderer: {fileID: 98976083}
   gemLight: {fileID: 98976080}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!23 &98976083 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
@@ -943,9 +941,8 @@ MonoBehaviour:
   gem: {fileID: 104702026}
   gemRenderer: {fileID: 104702031}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &104702028
 Light:
   m_ObjectHideFlags: 0
@@ -1081,95 +1078,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104702024}
   m_Mesh: {fileID: -8114078293353772558, guid: f527d153bbbaa544cbac250697e4f20d, type: 3}
---- !u!1001 &109437531
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.54
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.3462667
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.93813616
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -4.4820004
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.4754
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.4754
-      objectReference: {fileID: 0}
-    - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.4754
-      objectReference: {fileID: 0}
-    - target: {fileID: 11450312, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: renderModelPrefab
-      value: 
-      objectReference: {fileID: 1000011547835092, guid: d5082f7d9f947374197e0a97786f4e40,
-        type: 3}
-    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: renderModelPrefab
-      value: 
-      objectReference: {fileID: 1000012617731570, guid: 837f93beb9a614743ae3a2c0ada7c388,
-        type: 3}
-    - target: {fileID: 11401046, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: showDebugInteractables
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
---- !u!20 &113778459 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2014920, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 109437531}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &122277442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 518708289023065091, guid: 819d03f9b5f2b6341a2338effb1d79bd,
@@ -1270,9 +1178,8 @@ MonoBehaviour:
   gem: {fileID: 122277445}
   gemRenderer: {fileID: 122277447}
   gemLight: {fileID: 122277444}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!23 &122277447 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -8463604381484323637, guid: 819d03f9b5f2b6341a2338effb1d79bd,
@@ -1398,9 +1305,8 @@ MonoBehaviour:
   gem: {fileID: 143578708}
   gemRenderer: {fileID: 143578711}
   gemLight: {fileID: 143578710}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &143578710
 Light:
   m_ObjectHideFlags: 0
@@ -1538,9 +1444,8 @@ MonoBehaviour:
   gem: {fileID: 151953425}
   gemRenderer: {fileID: 151953430}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &151953427
 Light:
   m_ObjectHideFlags: 0
@@ -1804,9 +1709,8 @@ MonoBehaviour:
   gem: {fileID: 157281555}
   gemRenderer: {fileID: 157281553}
   gemLight: {fileID: 157281556}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &157281555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,9 +2018,8 @@ MonoBehaviour:
   gem: {fileID: 210516743}
   gemRenderer: {fileID: 210516748}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &210516745
 Light:
   m_ObjectHideFlags: 0
@@ -2323,9 +2226,8 @@ MonoBehaviour:
   gem: {fileID: 225654770}
   gemRenderer: {fileID: 225654775}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &225654772
 Light:
   m_ObjectHideFlags: 0
@@ -2551,9 +2453,8 @@ MonoBehaviour:
   gem: {fileID: 244432113}
   gemRenderer: {fileID: 244432118}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &244432115
 Light:
   m_ObjectHideFlags: 0
@@ -2760,9 +2661,8 @@ MonoBehaviour:
   gem: {fileID: 245717066}
   gemRenderer: {fileID: 245717071}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &245717068
 Light:
   m_ObjectHideFlags: 0
@@ -2969,9 +2869,8 @@ MonoBehaviour:
   gem: {fileID: 260276622}
   gemRenderer: {fileID: 260276627}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &260276624
 Light:
   m_ObjectHideFlags: 0
@@ -3128,9 +3027,8 @@ MonoBehaviour:
   gem: {fileID: 260715736}
   gemRenderer: {fileID: 260715740}
   gemLight: {fileID: 260715737}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &260715736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3336,9 +3234,8 @@ MonoBehaviour:
   gem: {fileID: 266752180}
   gemRenderer: {fileID: 266752185}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &266752182
 Light:
   m_ObjectHideFlags: 0
@@ -3624,9 +3521,8 @@ MonoBehaviour:
   gem: {fileID: 271850732}
   gemRenderer: {fileID: 271850737}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &271850734
 Light:
   m_ObjectHideFlags: 0
@@ -4058,9 +3954,8 @@ MonoBehaviour:
   gem: {fileID: 292338483}
   gemRenderer: {fileID: 292338481}
   gemLight: {fileID: 292338484}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &292338483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4211,9 +4106,8 @@ MonoBehaviour:
   gem: {fileID: 312656394}
   gemRenderer: {fileID: 312656399}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &312656396
 Light:
   m_ObjectHideFlags: 0
@@ -4742,9 +4636,8 @@ MonoBehaviour:
   gem: {fileID: 379825076}
   gemRenderer: {fileID: 379825081}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &379825078
 Light:
   m_ObjectHideFlags: 0
@@ -5222,9 +5115,8 @@ MonoBehaviour:
   gem: {fileID: 405052781}
   gemRenderer: {fileID: 405052786}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &405052783
 Light:
   m_ObjectHideFlags: 0
@@ -5589,9 +5481,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 435253956}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &435253953
 Light:
   m_ObjectHideFlags: 0
@@ -5744,6 +5635,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5b85afd42befa9d4e9675307426f845a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5b85afd42befa9d4e9675307426f845a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5782,7 +5678,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5b85afd42befa9d4e9675307426f845a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5b85afd42befa9d4e9675307426f845a,
         type: 3}
@@ -5906,9 +5802,8 @@ MonoBehaviour:
   gem: {fileID: 466157797}
   gemRenderer: {fileID: 466157802}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &466157799
 Light:
   m_ObjectHideFlags: 0
@@ -6115,9 +6010,8 @@ MonoBehaviour:
   gem: {fileID: 470856736}
   gemRenderer: {fileID: 470856741}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &470856738
 Light:
   m_ObjectHideFlags: 0
@@ -6324,9 +6218,8 @@ MonoBehaviour:
   gem: {fileID: 495281913}
   gemRenderer: {fileID: 495281918}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &495281915
 Light:
   m_ObjectHideFlags: 0
@@ -6650,9 +6543,8 @@ MonoBehaviour:
   gem: {fileID: 507534588}
   gemRenderer: {fileID: 507534593}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &507534590
 Light:
   m_ObjectHideFlags: 0
@@ -6937,9 +6829,8 @@ MonoBehaviour:
   gem: {fileID: 537139772}
   gemRenderer: {fileID: 537139777}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &537139774
 Light:
   m_ObjectHideFlags: 0
@@ -7146,9 +7037,8 @@ MonoBehaviour:
   gem: {fileID: 544266423}
   gemRenderer: {fileID: 544266428}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &544266425
 Light:
   m_ObjectHideFlags: 0
@@ -7305,9 +7195,8 @@ MonoBehaviour:
   gem: {fileID: 560687966}
   gemRenderer: {fileID: 560687970}
   gemLight: {fileID: 560687967}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &560687966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7493,9 +7382,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 574448022}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &574448019
 Light:
   m_ObjectHideFlags: 0
@@ -7721,9 +7609,8 @@ MonoBehaviour:
   gem: {fileID: 596277948}
   gemRenderer: {fileID: 596277953}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &596277950
 Light:
   m_ObjectHideFlags: 0
@@ -7950,9 +7837,8 @@ MonoBehaviour:
   gem: {fileID: 631792213}
   gemRenderer: {fileID: 631792218}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &631792215
 Light:
   m_ObjectHideFlags: 0
@@ -8159,9 +8045,8 @@ MonoBehaviour:
   gem: {fileID: 642583863}
   gemRenderer: {fileID: 642583868}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &642583865
 Light:
   m_ObjectHideFlags: 0
@@ -8368,9 +8253,8 @@ MonoBehaviour:
   gem: {fileID: 642701959}
   gemRenderer: {fileID: 642701964}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &642701961
 Light:
   m_ObjectHideFlags: 0
@@ -8596,9 +8480,8 @@ MonoBehaviour:
   gem: {fileID: 656399734}
   gemRenderer: {fileID: 656399739}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &656399736
 Light:
   m_ObjectHideFlags: 0
@@ -8883,9 +8766,8 @@ MonoBehaviour:
   gem: {fileID: 668626077}
   gemRenderer: {fileID: 668626082}
   gemLight: {fileID: 668626079}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &668626079
 Light:
   m_ObjectHideFlags: 0
@@ -9150,9 +9032,8 @@ MonoBehaviour:
   gem: {fileID: 674007650}
   gemRenderer: {fileID: 674007652}
   gemLight: {fileID: 674007647}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!23 &674007652 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3907355935067576919, guid: c8919961b2f4c4b40a35753481ce8b0a,
@@ -9230,9 +9111,8 @@ MonoBehaviour:
   gem: {fileID: 702042731}
   gemRenderer: {fileID: 702042736}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &702042733
 Light:
   m_ObjectHideFlags: 0
@@ -9860,9 +9740,8 @@ MonoBehaviour:
   gem: {fileID: 780491886}
   gemRenderer: {fileID: 780491890}
   gemLight: {fileID: 780491887}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &780491886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10182,9 +10061,8 @@ MonoBehaviour:
   gem: {fileID: 830689053}
   gemRenderer: {fileID: 830689058}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &830689055
 Light:
   m_ObjectHideFlags: 0
@@ -10391,9 +10269,8 @@ MonoBehaviour:
   gem: {fileID: 835901070}
   gemRenderer: {fileID: 835901075}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &835901072
 Light:
   m_ObjectHideFlags: 0
@@ -10698,9 +10575,8 @@ MonoBehaviour:
   gem: {fileID: 855895109}
   gemRenderer: {fileID: 855895114}
   gemLight: {fileID: 855895111}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &855895111
 Light:
   m_ObjectHideFlags: 0
@@ -11162,9 +11038,8 @@ MonoBehaviour:
   gem: {fileID: 940253418}
   gemRenderer: {fileID: 940253423}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &940253420
 Light:
   m_ObjectHideFlags: 0
@@ -11486,9 +11361,8 @@ MonoBehaviour:
   gem: {fileID: 975221973}
   gemRenderer: {fileID: 975221978}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &975221975
 Light:
   m_ObjectHideFlags: 0
@@ -11641,6 +11515,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5b85afd42befa9d4e9675307426f845a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5b85afd42befa9d4e9675307426f845a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11679,7 +11558,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5b85afd42befa9d4e9675307426f845a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5b85afd42befa9d4e9675307426f845a,
         type: 3}
@@ -11967,9 +11846,8 @@ MonoBehaviour:
   gem: {fileID: 1022067782}
   gemRenderer: {fileID: 1022067787}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1022067784
 Light:
   m_ObjectHideFlags: 0
@@ -12186,9 +12064,8 @@ MonoBehaviour:
   gem: {fileID: 1027224124}
   gemRenderer: {fileID: 1027224127}
   gemLight: {fileID: 1027224122}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1027224124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12333,9 +12210,8 @@ MonoBehaviour:
   gem: {fileID: 1038760780}
   gemRenderer: {fileID: 1038760785}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1038760782
 Light:
   m_ObjectHideFlags: 0
@@ -12542,9 +12418,8 @@ MonoBehaviour:
   gem: {fileID: 1041908636}
   gemRenderer: {fileID: 1041908641}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1041908638
 Light:
   m_ObjectHideFlags: 0
@@ -12751,9 +12626,8 @@ MonoBehaviour:
   gem: {fileID: 1042156566}
   gemRenderer: {fileID: 1042156571}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1042156568
 Light:
   m_ObjectHideFlags: 0
@@ -13055,9 +12929,8 @@ MonoBehaviour:
   gem: {fileID: 1061273134}
   gemRenderer: {fileID: 1061273139}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1061273136
 Light:
   m_ObjectHideFlags: 0
@@ -13264,9 +13137,8 @@ MonoBehaviour:
   gem: {fileID: 1068968708}
   gemRenderer: {fileID: 1068968713}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1068968710
 Light:
   m_ObjectHideFlags: 0
@@ -13491,7 +13363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1073565678
 GameObject:
@@ -13662,9 +13534,8 @@ MonoBehaviour:
   gem: {fileID: 1101167034}
   gemRenderer: {fileID: 1101167039}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1101167036
 Light:
   m_ObjectHideFlags: 0
@@ -13871,9 +13742,8 @@ MonoBehaviour:
   gem: {fileID: 1102662813}
   gemRenderer: {fileID: 1102662818}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1102662815
 Light:
   m_ObjectHideFlags: 0
@@ -14099,9 +13969,8 @@ MonoBehaviour:
   gem: {fileID: 1118845207}
   gemRenderer: {fileID: 1118845212}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1118845209
 Light:
   m_ObjectHideFlags: 0
@@ -14387,9 +14256,8 @@ MonoBehaviour:
   gem: {fileID: 1154363028}
   gemRenderer: {fileID: 1154363033}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1154363030
 Light:
   m_ObjectHideFlags: 0
@@ -14596,9 +14464,8 @@ MonoBehaviour:
   gem: {fileID: 1157262670}
   gemRenderer: {fileID: 1157262675}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1157262672
 Light:
   m_ObjectHideFlags: 0
@@ -14884,9 +14751,8 @@ MonoBehaviour:
   gem: {fileID: 1176607255}
   gemRenderer: {fileID: 1176607260}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1176607257
 Light:
   m_ObjectHideFlags: 0
@@ -15191,9 +15057,8 @@ MonoBehaviour:
   gem: {fileID: 1238285388}
   gemRenderer: {fileID: 1238285393}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1238285390
 Light:
   m_ObjectHideFlags: 0
@@ -15624,9 +15489,8 @@ MonoBehaviour:
   gem: {fileID: 1305990400}
   gemRenderer: {fileID: 1305990405}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1305990402
 Light:
   m_ObjectHideFlags: 0
@@ -15833,9 +15697,8 @@ MonoBehaviour:
   gem: {fileID: 1310721951}
   gemRenderer: {fileID: 1310721956}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1310721953
 Light:
   m_ObjectHideFlags: 0
@@ -16042,9 +15905,8 @@ MonoBehaviour:
   gem: {fileID: 1333963079}
   gemRenderer: {fileID: 1333963084}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1333963081
 Light:
   m_ObjectHideFlags: 0
@@ -16220,9 +16082,8 @@ MonoBehaviour:
   gem: {fileID: 1345591152}
   gemRenderer: {fileID: 1345591155}
   gemLight: {fileID: 1345591154}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1345591154
 Light:
   m_ObjectHideFlags: 0
@@ -16357,7 +16218,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 113778459}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -16381,7 +16242,7 @@ RectTransform:
   m_Children:
   - {fileID: 1759467047}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -16459,9 +16320,8 @@ MonoBehaviour:
   gem: {fileID: 1356477371}
   gemRenderer: {fileID: 1356477376}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1356477373
 Light:
   m_ObjectHideFlags: 0
@@ -16719,9 +16579,8 @@ MonoBehaviour:
   gem: {fileID: 1385641504}
   gemRenderer: {fileID: 1385641502}
   gemLight: {fileID: 1385641505}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1385641504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16951,9 +16810,8 @@ MonoBehaviour:
   gem: {fileID: 1405572726}
   gemRenderer: {fileID: 1405572731}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1405572728
 Light:
   m_ObjectHideFlags: 0
@@ -17384,9 +17242,8 @@ MonoBehaviour:
   gem: {fileID: 1429636284}
   gemRenderer: {fileID: 1429636282}
   gemLight: {fileID: 1429636285}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1429636284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17537,9 +17394,8 @@ MonoBehaviour:
   gem: {fileID: 1444889894}
   gemRenderer: {fileID: 1444889899}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1444889896
 Light:
   m_ObjectHideFlags: 0
@@ -17825,9 +17681,8 @@ MonoBehaviour:
   gem: {fileID: 1449995865}
   gemRenderer: {fileID: 1449995870}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1449995867
 Light:
   m_ObjectHideFlags: 0
@@ -18034,9 +17889,8 @@ MonoBehaviour:
   gem: {fileID: 1475530671}
   gemRenderer: {fileID: 1475530676}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1475530673
 Light:
   m_ObjectHideFlags: 0
@@ -18243,9 +18097,8 @@ MonoBehaviour:
   gem: {fileID: 1482311407}
   gemRenderer: {fileID: 1482311412}
   gemLight: {fileID: 1482311409}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1482311409
 Light:
   m_ObjectHideFlags: 0
@@ -18452,9 +18305,8 @@ MonoBehaviour:
   gem: {fileID: 1491117338}
   gemRenderer: {fileID: 1491117343}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1491117340
 Light:
   m_ObjectHideFlags: 0
@@ -18661,9 +18513,8 @@ MonoBehaviour:
   gem: {fileID: 1494617258}
   gemRenderer: {fileID: 1494617263}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1494617260
 Light:
   m_ObjectHideFlags: 0
@@ -19007,9 +18858,8 @@ MonoBehaviour:
   gem: {fileID: 1523215377}
   gemRenderer: {fileID: 1523215379}
   gemLight: {fileID: 1523215374}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!23 &1523215379 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -3907355935067576919, guid: c8919961b2f4c4b40a35753481ce8b0a,
@@ -19087,9 +18937,8 @@ MonoBehaviour:
   gem: {fileID: 1524147855}
   gemRenderer: {fileID: 1524147860}
   gemLight: {fileID: 1524147857}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1524147857
 Light:
   m_ObjectHideFlags: 0
@@ -19296,9 +19145,8 @@ MonoBehaviour:
   gem: {fileID: 1524426807}
   gemRenderer: {fileID: 1524426812}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1524426809
 Light:
   m_ObjectHideFlags: 0
@@ -19505,9 +19353,8 @@ MonoBehaviour:
   gem: {fileID: 1527487887}
   gemRenderer: {fileID: 1527487892}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1527487889
 Light:
   m_ObjectHideFlags: 0
@@ -19714,9 +19561,8 @@ MonoBehaviour:
   gem: {fileID: 1531829060}
   gemRenderer: {fileID: 1531829065}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1531829062
 Light:
   m_ObjectHideFlags: 0
@@ -19852,6 +19698,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531829058}
   m_Mesh: {fileID: 651277295613814963, guid: f527d153bbbaa544cbac250697e4f20d, type: 3}
+--- !u!114 &1554032745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4029165621102842955, guid: 92577031aec4af643abecb60a6504a7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4029165619979662639}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3ea273e598a0e449e049f865eee8a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1576382652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5660215504231223345, guid: c8919961b2f4c4b40a35753481ce8b0a,
@@ -19873,9 +19731,8 @@ MonoBehaviour:
   gem: {fileID: 1576382655}
   gemRenderer: {fileID: 1576382659}
   gemLight: {fileID: 1576382656}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1576382655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20061,9 +19918,8 @@ MonoBehaviour:
   gem: {fileID: 1580990747}
   gemRenderer: {fileID: 1580990752}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1580990749
 Light:
   m_ObjectHideFlags: 0
@@ -20270,9 +20126,8 @@ MonoBehaviour:
   gem: {fileID: 1598171261}
   gemRenderer: {fileID: 1598171266}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1598171263
 Light:
   m_ObjectHideFlags: 0
@@ -20603,7 +20458,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f527d153bbbaa544cbac250697e4f20d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f527d153bbbaa544cbac250697e4f20d,
         type: 3}
@@ -21527,9 +21382,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21564,9 +21418,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21601,9 +21454,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21638,9 +21490,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21675,9 +21526,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21712,9 +21562,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21749,9 +21598,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21786,9 +21634,8 @@ MonoBehaviour:
   gem: {fileID: 0}
   gemRenderer: {fileID: 0}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 0}
 --- !u!114 &1611932156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21897,9 +21744,8 @@ MonoBehaviour:
   gem: {fileID: 1611932160}
   gemRenderer: {fileID: 1611932079}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22023,9 +21869,8 @@ MonoBehaviour:
   gem: {fileID: 1611932165}
   gemRenderer: {fileID: 1611932081}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22149,9 +21994,8 @@ MonoBehaviour:
   gem: {fileID: 1611932170}
   gemRenderer: {fileID: 1611932083}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22275,9 +22119,8 @@ MonoBehaviour:
   gem: {fileID: 1611932175}
   gemRenderer: {fileID: 1611932085}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22401,9 +22244,8 @@ MonoBehaviour:
   gem: {fileID: 1611932180}
   gemRenderer: {fileID: 1611932087}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22527,9 +22369,8 @@ MonoBehaviour:
   gem: {fileID: 1611932185}
   gemRenderer: {fileID: 1611932089}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22653,9 +22494,8 @@ MonoBehaviour:
   gem: {fileID: 1611932190}
   gemRenderer: {fileID: 1611932091}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22779,9 +22619,8 @@ MonoBehaviour:
   gem: {fileID: 1611932195}
   gemRenderer: {fileID: 1611932093}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22905,9 +22744,8 @@ MonoBehaviour:
   gem: {fileID: 1611932200}
   gemRenderer: {fileID: 1611932095}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23031,9 +22869,8 @@ MonoBehaviour:
   gem: {fileID: 1611932205}
   gemRenderer: {fileID: 1611932097}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23157,9 +22994,8 @@ MonoBehaviour:
   gem: {fileID: 1611932210}
   gemRenderer: {fileID: 1611932099}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23283,9 +23119,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 1611932101}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23409,9 +23244,8 @@ MonoBehaviour:
   gem: {fileID: 1611932215}
   gemRenderer: {fileID: 1611932103}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23535,9 +23369,8 @@ MonoBehaviour:
   gem: {fileID: 1611932225}
   gemRenderer: {fileID: 1611932105}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23661,9 +23494,8 @@ MonoBehaviour:
   gem: {fileID: 1611932230}
   gemRenderer: {fileID: 1611932107}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23787,9 +23619,8 @@ MonoBehaviour:
   gem: {fileID: 1611932235}
   gemRenderer: {fileID: 1611932109}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23913,9 +23744,8 @@ MonoBehaviour:
   gem: {fileID: 1611932240}
   gemRenderer: {fileID: 1611932111}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24039,9 +23869,8 @@ MonoBehaviour:
   gem: {fileID: 1611932245}
   gemRenderer: {fileID: 1611932113}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24165,9 +23994,8 @@ MonoBehaviour:
   gem: {fileID: 1611932250}
   gemRenderer: {fileID: 1611932115}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24291,9 +24119,8 @@ MonoBehaviour:
   gem: {fileID: 1611932255}
   gemRenderer: {fileID: 1611932117}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24417,9 +24244,8 @@ MonoBehaviour:
   gem: {fileID: 1611932260}
   gemRenderer: {fileID: 1611932119}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24543,9 +24369,8 @@ MonoBehaviour:
   gem: {fileID: 1611932265}
   gemRenderer: {fileID: 1611932121}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24669,9 +24494,8 @@ MonoBehaviour:
   gem: {fileID: 1611932270}
   gemRenderer: {fileID: 1611932123}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24795,9 +24619,8 @@ MonoBehaviour:
   gem: {fileID: 1611932275}
   gemRenderer: {fileID: 1611932125}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24921,9 +24744,8 @@ MonoBehaviour:
   gem: {fileID: 1611932280}
   gemRenderer: {fileID: 1611932127}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25047,9 +24869,8 @@ MonoBehaviour:
   gem: {fileID: 1611932285}
   gemRenderer: {fileID: 1611932129}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25173,9 +24994,8 @@ MonoBehaviour:
   gem: {fileID: 1611932290}
   gemRenderer: {fileID: 1611932131}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25299,9 +25119,8 @@ MonoBehaviour:
   gem: {fileID: 1611932295}
   gemRenderer: {fileID: 1611932133}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25425,9 +25244,8 @@ MonoBehaviour:
   gem: {fileID: 1611932300}
   gemRenderer: {fileID: 1611932135}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25551,9 +25369,8 @@ MonoBehaviour:
   gem: {fileID: 1611932305}
   gemRenderer: {fileID: 1611932137}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25677,9 +25494,8 @@ MonoBehaviour:
   gem: {fileID: 1611932310}
   gemRenderer: {fileID: 1611932139}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1611932310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25904,9 +25720,8 @@ MonoBehaviour:
   gem: {fileID: 1612601071}
   gemRenderer: {fileID: 1612601070}
   gemLight: {fileID: 1612601073}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1612601073
 Light:
   m_ObjectHideFlags: 0
@@ -26156,9 +25971,8 @@ MonoBehaviour:
   gem: {fileID: 1616967891}
   gemRenderer: {fileID: 1616967896}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1616967893
 Light:
   m_ObjectHideFlags: 0
@@ -26365,9 +26179,8 @@ MonoBehaviour:
   gem: {fileID: 1617812289}
   gemRenderer: {fileID: 1617812294}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1617812291
 Light:
   m_ObjectHideFlags: 0
@@ -26574,9 +26387,8 @@ MonoBehaviour:
   gem: {fileID: 1631531323}
   gemRenderer: {fileID: 1631531328}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1631531325
 Light:
   m_ObjectHideFlags: 0
@@ -26783,9 +26595,8 @@ MonoBehaviour:
   gem: {fileID: 1648332905}
   gemRenderer: {fileID: 1648332910}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1648332907
 Light:
   m_ObjectHideFlags: 0
@@ -27082,9 +26893,8 @@ MonoBehaviour:
   gem: {fileID: 1656360169}
   gemRenderer: {fileID: 1656360168}
   gemLight: {fileID: 1656360171}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1656360171
 Light:
   m_ObjectHideFlags: 0
@@ -27394,9 +27204,8 @@ MonoBehaviour:
   gem: {fileID: 1698032947}
   gemRenderer: {fileID: 1698032952}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1698032949
 Light:
   m_ObjectHideFlags: 0
@@ -27700,9 +27509,8 @@ MonoBehaviour:
   gem: {fileID: 1721227121}
   gemRenderer: {fileID: 1721227126}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1721227123
 Light:
   m_ObjectHideFlags: 0
@@ -27909,9 +27717,8 @@ MonoBehaviour:
   gem: {fileID: 1729977723}
   gemRenderer: {fileID: 1729977728}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1729977725
 Light:
   m_ObjectHideFlags: 0
@@ -28128,9 +27935,8 @@ MonoBehaviour:
   gem: {fileID: 1733192845}
   gemRenderer: {fileID: 1733192848}
   gemLight: {fileID: 1733192843}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1733192845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28335,9 +28141,8 @@ MonoBehaviour:
   gem: {fileID: 1753715044}
   gemRenderer: {fileID: 1753715049}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1753715046
 Light:
   m_ObjectHideFlags: 0
@@ -28926,9 +28731,8 @@ MonoBehaviour:
   gem: {fileID: 1846726752}
   gemRenderer: {fileID: 1846726757}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1846726754
 Light:
   m_ObjectHideFlags: 0
@@ -29135,9 +28939,8 @@ MonoBehaviour:
   gem: {fileID: 1851497283}
   gemRenderer: {fileID: 1851497288}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1851497285
 Light:
   m_ObjectHideFlags: 0
@@ -29344,9 +29147,8 @@ MonoBehaviour:
   gem: {fileID: 1879041154}
   gemRenderer: {fileID: 1879041159}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1879041156
 Light:
   m_ObjectHideFlags: 0
@@ -29632,9 +29434,8 @@ MonoBehaviour:
   gem: {fileID: 1894247087}
   gemRenderer: {fileID: 1894247092}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1894247089
 Light:
   m_ObjectHideFlags: 0
@@ -29791,9 +29592,8 @@ MonoBehaviour:
   gem: {fileID: 1919762377}
   gemRenderer: {fileID: 1919762381}
   gemLight: {fileID: 1919762378}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!114 &1919762377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29998,7 +29798,7 @@ Transform:
   m_LocalScale: {x: 5.76, y: 1.25672, z: 2.56}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972009866
 GameObject:
@@ -30071,9 +29871,8 @@ MonoBehaviour:
   gem: {fileID: 1972009868}
   gemRenderer: {fileID: 1972009873}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1972009870
 Light:
   m_ObjectHideFlags: 0
@@ -30280,9 +30079,8 @@ MonoBehaviour:
   gem: {fileID: 1992224437}
   gemRenderer: {fileID: 1992224442}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &1992224439
 Light:
   m_ObjectHideFlags: 0
@@ -30683,9 +30481,8 @@ MonoBehaviour:
   gem: {fileID: 2053069082}
   gemRenderer: {fileID: 2053069087}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &2053069084
 Light:
   m_ObjectHideFlags: 0
@@ -31050,9 +30847,8 @@ MonoBehaviour:
   gem: {fileID: 2106429780}
   gemRenderer: {fileID: 2106429785}
   gemLight: {fileID: 2106429782}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &2106429782
 Light:
   m_ObjectHideFlags: 0
@@ -31259,9 +31055,8 @@ MonoBehaviour:
   gem: {fileID: 2145585314}
   gemRenderer: {fileID: 2145585319}
   gemLight: {fileID: 0}
-  gemTotal: 129
-  gemCount: 0
   alreadyCounted: 0
+  gameController: {fileID: 1554032745}
 --- !u!108 &2145585316
 Light:
   m_ObjectHideFlags: 0
@@ -31447,7 +31242,7 @@ PrefabInstance:
     - target: {fileID: 4029165621102842954, guid: 92577031aec4af643abecb60a6504a7a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4029165621102842954, guid: 92577031aec4af643abecb60a6504a7a,
         type: 3}
@@ -31479,6 +31274,16 @@ PrefabInstance:
     - target: {fileID: 1175003671, guid: 92577031aec4af643abecb60a6504a7a, type: 3}
       propertyPath: buttonText
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029165621102842955, guid: 92577031aec4af643abecb60a6504a7a,
+        type: 3}
+      propertyPath: gem
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029165619979662641, guid: 92577031aec4af643abecb60a6504a7a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92577031aec4af643abecb60a6504a7a, type: 3}

@@ -26,7 +26,9 @@ public class GameController : MonoBehaviour
 
     public float volume;
 
-    public GemBehavior gem;
+    public int gemCount = 0;
+    public int gemTotal = 10;
+    //129
 
     // Start is called before the first frame update
     void Start()
@@ -39,14 +41,17 @@ public class GameController : MonoBehaviour
         lows.volume = volume;
         mids.volume = volume;
         high.volume = volume;
+
+        StartCoroutine("GameTimer");
     }
-    private void Update()
+    void Update()
     {
-        if(gem.gemCount == gem.gemTotal)
+        if (Input.GetKeyUp(KeyCode.R))
         {
-            LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+
     public void CreateThrowable (string color)
     {
         switch(color)
@@ -114,5 +119,17 @@ public class GameController : MonoBehaviour
     public void LoadScene(int i)
     {
         SceneManager.LoadScene(i);
+    }
+
+    public IEnumerator GameTimer()
+    {
+        yield return new WaitForSeconds(60);
+        SceneManager.LoadScene(2);
+    }
+
+    public void AddCount()
+    {
+        gemCount++;
+        Debug.Log(gemCount);
     }
 }

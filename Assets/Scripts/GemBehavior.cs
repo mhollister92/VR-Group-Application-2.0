@@ -10,9 +10,8 @@ public class GemBehavior : MonoBehaviour
     public GemClass gem;
     public Renderer gemRenderer;
     public Light gemLight;
-    public int gemTotal = 129;
-    public int gemCount = 0;
     public bool alreadyCounted = false;
+    public GameController gameController;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +25,17 @@ public class GemBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (IsAllActive())
+        {
+            gemRenderer.material.color = new Color(gem.rValue / 255f, gem.gValue / 255f, gem.bValue / 255f, gemRenderer.material.color.a);
+            gemLight.enabled = true;
+            gem.allActive = true;
+            if (!alreadyCounted)
+            {
+                gameController.AddCount();
+                alreadyCounted = true;
+            }
+        }
     }
     //this function runs when something collides with the gem
     private void OnTriggerEnter(Collider other)
@@ -39,6 +48,7 @@ public class GemBehavior : MonoBehaviour
             {
                 gemRenderer.material.color = new Color(gem.rValue / 255f, gemRenderer.material.color.g, gemRenderer.material.color.b, gemRenderer.material.color.a);
                 gemLight.enabled = true;
+                gem.rActive = true;
             }
         }
         //if the object is tagged green, check if green is active and if not, set the green value and dont change the red or blue
@@ -48,6 +58,7 @@ public class GemBehavior : MonoBehaviour
             {
                 gemRenderer.material.color = new Color(gemRenderer.material.color.r, gem.gValue / 255f, gemRenderer.material.color.b, gemRenderer.material.color.a);
                 gemLight.enabled = true;
+                gem.gActive = true;
             }
         }
         //if the object is tagged blue, check if blue is active and if not, set the blue value and dont change the red or geen
@@ -57,20 +68,11 @@ public class GemBehavior : MonoBehaviour
             {
                 gemRenderer.material.color = new Color(gemRenderer.material.color.r, gemRenderer.material.color.g, gem.bValue / 255f, gemRenderer.material.color.a);
                 gemLight.enabled = true;
+                gem.bActive = true;
             }
         }
         //if all the colors are active, don't change the values
-        if (IsAllActive())
-        {
-            gemRenderer.material.color = new Color(gem.rValue / 255f, gem.gValue / 255f, gem.bValue / 255f, gemRenderer.material.color.a);
-            gemLight.enabled = true;
-            gem.allActive = true;
-            if(!alreadyCounted)
-            {
-                gemCount++;
-                alreadyCounted = true;
-            }
-        }
+
     }
     //this is a function that returns true or false, it takes an int and that decides which value it checks
     //if the int is 1, it checks if the red is active and returns true or false, and so on
@@ -86,7 +88,7 @@ public class GemBehavior : MonoBehaviour
         }
         else if (color == 3)
         {
-            return gem.gActive;
+            return gem.bActive;
         }
         else
             return false;

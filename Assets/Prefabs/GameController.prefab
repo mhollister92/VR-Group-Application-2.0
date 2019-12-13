@@ -66,6 +66,8 @@ MonoBehaviour:
   mids: {fileID: 4029165619979662642}
   high: {fileID: 4029165619979662643}
   volume: 0.2
+  gemCount: 0
+  gemTotal: 0
 --- !u!82 &4029165619979662641
 AudioSource:
   m_ObjectHideFlags: 0

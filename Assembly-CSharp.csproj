@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\GemClass.cs" />
     <Compile Include="Assets\Scripts\MenuBehavior.cs" />
     <Compile Include="Assets\Scripts\RingBehavior.cs" />
+    <Compile Include="Assets\Scripts\StartController.cs" />
     <None Include="Assets\ParticleLight\Read Me\Read Me.txt" />
     <None Include="Assets\ParticleLight\Shader\AdditiveMask.shader" />
     <Reference Include="Unity.Timeline.Editor">
