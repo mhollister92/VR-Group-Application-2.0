@@ -50,6 +50,11 @@ public class GameController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void CreateThrowable (string color)
@@ -123,7 +128,7 @@ public class GameController : MonoBehaviour
 
     public IEnumerator GameTimer()
     {
-        yield return new WaitForSeconds(60);
+        yield return new WaitForSeconds(300);
         SceneManager.LoadScene(2);
     }
 
