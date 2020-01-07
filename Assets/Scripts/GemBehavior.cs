@@ -13,15 +13,16 @@ public class GemBehavior : MonoBehaviour
     public bool alreadyCounted = false;
     public GameController gameController;
 
+
     // Start is called before the first frame update
     void Start()
     {
         //assigns the renderer on the object this script is attached to and assigns it to the gemMaterial variable
         gemRenderer = gameObject.GetComponent<Renderer>();
         gemLight = gameObject.GetComponent<Light>();
-
         gemLight.enabled = false;
-    }
+
+}
     // Update is called once per frame
     void Update()
     {

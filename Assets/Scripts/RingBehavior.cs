@@ -18,6 +18,11 @@ public class RingBehavior : MonoBehaviour
     //holds the distance between the start and end position
     public float distance;
 
+    public List<int[]> colors = new List<int[]>();
+    public int listLength;
+
+    public int randomNumber;
+
     void Start()
     {
         transform.position = startPosition;
