@@ -21,6 +21,7 @@ public class BowlBehavior : MonoBehaviour
     public RingBehavior ringBehavior;
 
     public GameController gameController;
+
     // Start is called before the first frame update
     void Start()
     {

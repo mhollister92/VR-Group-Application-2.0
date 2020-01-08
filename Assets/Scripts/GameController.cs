@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 using Valve.VR;
 
 public class GameController : MonoBehaviour
@@ -20,11 +21,10 @@ public class GameController : MonoBehaviour
     public Transform greenStart;
     public Transform blueStart;
 
-    public AudioSource lows;
-    public AudioSource mids;
-    public AudioSource high;
+    public AudioMixer audioMixer;
 
-    public float volume;
+    public float softVolume;
+    public float loudVolume;
 
     public int gemCount = 0;
     public int gemTotal = 10;
@@ -36,11 +36,13 @@ public class GameController : MonoBehaviour
         redClone = Instantiate(redThrowable);
         greenClone = Instantiate(greenThrowable);
         blueClone = Instantiate(blueThrowable);
-        volume = 0.2f;
 
-        lows.volume = volume;
-        mids.volume = volume;
-        high.volume = volume;
+        softVolume = 0.1f;
+        loudVolume = 5f;
+
+        audioMixer.SetFloat("LowsVolume", softVolume);
+        audioMixer.SetFloat("MidsVolume", softVolume);
+        audioMixer.SetFloat("HighsVolume", softVolume);
 
         StartCoroutine("GameTimer");
     }
@@ -55,6 +57,8 @@ public class GameController : MonoBehaviour
         {
             Application.Quit();
         }
+
+
     }
 
     public void CreateThrowable (string color)
@@ -80,24 +84,17 @@ public class GameController : MonoBehaviour
         switch (color)
         {
             case "Red":
-                volume = 1f;
-                lows.volume = volume;
-                //Debug.Log(lows.volume);
+                RaiseVolume("LowsVolume");
                 break;
             case "Green":
-                volume = 1f;
-                mids.volume = volume;
-                //Debug.Log(mids.volume);
+                RaiseVolume("MidsVolume");
                 break;
             case "Blue":
-                volume = 1f;
-                high.volume = volume;
-                //Debug.Log(high.volume);
+                RaiseVolume("HighsVolume");
                 break;
             default:
                 break;
         }
-        volume = 0.2f;
     }
 
     public void StopAudio(string color)
@@ -105,16 +102,13 @@ public class GameController : MonoBehaviour
         switch (color)
         {
             case "Red":
-                volume = 0.2f;
-                lows.volume = volume;
+                LowerVolume("LowsVolume");
                 break;
             case "Green":
-                volume = 0.2f;
-                mids.volume = volume;
+                LowerVolume("MidsVolume");
                 break;
             case "Blue":
-                volume = 0.2f;
-                high.volume = volume;
+                LowerVolume("HighsVolume");
                 break;
             default:
                 break;
@@ -136,5 +130,18 @@ public class GameController : MonoBehaviour
     {
         gemCount++;
         Debug.Log(gemCount);
+    }
+
+    public void RaiseVolume(string parameter)
+    {
+        audioMixer.SetFloat(parameter, 5f);
+        //audioMixer.GetFloat(parameter, out float value);
+        //Debug.Log(value);
+    }
+    public void LowerVolume(string parameter)
+    {
+        audioMixer.SetFloat(parameter, -5f);
+        //audioMixer.GetFloat(parameter, out float value);
+        //Debug.Log(value);
     }
 }

@@ -233,6 +233,8 @@ MonoBehaviour:
     type: 3}
   gameController: {fileID: 4029165621102842955, guid: 92577031aec4af643abecb60a6504a7a,
     type: 3}
+  lowsController: {fileID: 8642902671030110928, guid: 30eb15a1ee8a36346b13af2a89b70d83,
+    type: 3}
 --- !u!64 &-6619943657265182304
 MeshCollider:
   m_ObjectHideFlags: 0
