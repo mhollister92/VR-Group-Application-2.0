@@ -27,8 +27,8 @@ public class GameController : MonoBehaviour
     public float loudVolume;
 
     public int gemCount = 0;
-    public int gemTotal = 10;
-    //129
+    public int gemTotal = 130;
+    //130
 
     // Start is called before the first frame update
     void Start()

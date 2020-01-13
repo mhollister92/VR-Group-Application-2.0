@@ -20,6 +20,7 @@ public class GemClass : MonoBehaviour
 
     public int randomNumber;
 
+
     private void Start()
     {
 
@@ -54,5 +55,6 @@ public class GemClass : MonoBehaviour
         rValue = colors[randomNumber][0];
         gValue = colors[randomNumber][1];
         bValue = colors[randomNumber][2];
+
     }
 }
