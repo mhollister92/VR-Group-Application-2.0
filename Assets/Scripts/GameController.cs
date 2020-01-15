@@ -33,6 +33,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gemTotal = 130;
         redClone = Instantiate(redThrowable);
         greenClone = Instantiate(greenThrowable);
         blueClone = Instantiate(blueThrowable);
@@ -58,6 +59,10 @@ public class GameController : MonoBehaviour
             Application.Quit();
         }
 
+        if(gemCount >= gemTotal)
+        {
+            SceneManager.LoadScene(2);
+        }
 
     }
 
