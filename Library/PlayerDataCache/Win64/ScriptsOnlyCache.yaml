@@ -179,6 +179,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
     Assets/Scenes/StartScene.unity:
@@ -615,7 +621,7 @@ ScriptsOnlyBuild:
     className: FloppyHand
   - hash:
       serializedVersion: 2
-      Hash: 6824f9298445bc7a2679db9ccb4b58c1
+      Hash: 29a4b316095701c1d099f795001012b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -903,7 +909,7 @@ ScriptsOnlyBuild:
     className: IgnoreTeleportTrace
   - hash:
       serializedVersion: 2
-      Hash: 4890dc8562ec4c7d1940342d8ded167c
+      Hash: bb9236b0167b937ddc1a43c4beed77b5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RingBehavior
@@ -1455,7 +1461,7 @@ ScriptsOnlyBuild:
     className: SteamVR_ExternalCamera
   - hash:
       serializedVersion: 2
-      Hash: 62340ee5b566eecf735c91aa9dae79e2
+      Hash: ae4d97d0506a5175353aa957f688a7d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GemClass

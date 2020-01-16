@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         gemTotal = 130;
+        gemCount = 0;
         redClone = Instantiate(redThrowable);
         greenClone = Instantiate(greenThrowable);
         blueClone = Instantiate(blueThrowable);
@@ -127,7 +128,7 @@ public class GameController : MonoBehaviour
 
     public IEnumerator GameTimer()
     {
-        yield return new WaitForSeconds(300);
+        yield return new WaitForSeconds(600);
         SceneManager.LoadScene(2);
     }
 
